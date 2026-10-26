@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-26 · 直播源升级 v2",
   "channels": [
     {
       "id": "abc-us",
@@ -8,14 +8,46 @@
       "language": "英语",
       "category": "国际新闻",
       "website": "https://abcnews.com/",
-      "liveUrl": "https://abcnews.com/Live",
+      "liveUrl": "https://www.youtube.com/@ABCNews/live",
       "short": "ABC",
-      "status": "入口已核对",
+      "status": "playable",
       "description": "24/7 新闻频道，包含直播与重播节目。",
-      "verification": "官方页面明确列出 24/7 Coverage 与直播节目单。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "type": "youtube",
+          "label": "官方 YouTube",
+          "url": "https://www.youtube.com/@ABCNews/live",
+          "status": "playable",
+          "liveState": "live",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
+          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
+          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
+          "officialEvidence": [
+            "https://abcnews.com/US/abc-news-live/story?id=65127516"
+          ],
+          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
+        },
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://abcnews.com/Live",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "用户报告官网播放器显示 An error has occurred. Please contact support for more assistance. 不能据此断定链接失效，也不标记可播放。",
+          "officialEvidence": [
+            "https://abcnews.com/"
+          ],
+          "restrictions": "已收到播放器错误报告；建议优先使用官方 YouTube。"
+        }
+      ]
     },
     {
       "id": "cbs",
@@ -26,12 +58,28 @@
       "website": "https://www.cbsnews.com/",
       "liveUrl": "https://www.cbsnews.com/live/",
       "short": "CBS",
-      "status": "入口已核对",
+      "status": "unverified",
       "description": "美国新闻、国际报道与访谈。",
-      "verification": "官方页面标明免费 24/7 新闻直播。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.cbsnews.com/live/",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方页面标明免费 24/7 新闻直播。 本次未验证官网音视频播放。 官方 @CBSNews/live 本次进入频道页，未确认在播，因此不新增 YouTube 播放线路。",
+          "officialEvidence": [
+            "https://www.cbsnews.com/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "nbc",
@@ -42,12 +90,28 @@
       "website": "https://www.nbcnews.com/",
       "liveUrl": "https://www.nbcnews.com/now",
       "short": "NBC",
-      "status": "待播放验证",
+      "status": "unverified",
       "description": "滚动新闻、现场报道和专题访谈。",
-      "verification": "自动抓取被 robots 限制；未实测音视频。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.nbcnews.com/now",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "自动抓取被 robots 限制；未实测音视频。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.nbcnews.com/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "bloomberg",
@@ -58,12 +122,28 @@
       "website": "https://www.bloomberg.com/",
       "liveUrl": "https://www.bloomberg.com/live",
       "short": "BTV",
-      "status": "入口已核对",
+      "status": "unverified",
       "description": "全球金融市场、商业访谈和经济新闻。",
-      "verification": "官方 video 页面提供 Live Bloomberg Television 入口；未实测播放。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.bloomberg.com/live",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方 video 页面提供 Live Bloomberg Television 入口；未实测播放。 本次未验证官网音视频播放。 官方 @bloomberglp/live 本次进入频道页，未确认在播，因此不新增 YouTube 播放线路。",
+          "officialEvidence": [
+            "https://www.bloomberg.com/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "sky",
@@ -72,14 +152,46 @@
       "language": "英语",
       "category": "国际新闻",
       "website": "https://news.sky.com/",
-      "liveUrl": "https://news.sky.com/watch-live",
+      "liveUrl": "https://www.youtube.com/@SkyNews/live",
       "short": "SKY",
-      "status": "入口已核对",
+      "status": "playable",
       "description": "英国与全球突发新闻、时事分析。",
-      "verification": "官方 Watch Sky News Live 页面已读取。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "type": "youtube",
+          "label": "官方 YouTube",
+          "url": "https://www.youtube.com/@SkyNews/live",
+          "status": "playable",
+          "liveState": "live",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
+          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
+          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
+          "officialEvidence": [
+            "https://www.youtube.com/@SkyNews"
+          ],
+          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
+        },
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://news.sky.com/watch-live",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方 Watch Sky News Live 页面已读取。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://news.sky.com/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "france24",
@@ -88,14 +200,46 @@
       "language": "英语",
       "category": "国际新闻",
       "website": "https://www.france24.com/",
-      "liveUrl": "https://www.france24.com/en/live",
+      "liveUrl": "https://www.youtube.com/@France24_en/live",
       "short": "F24",
-      "status": "待播放验证",
+      "status": "playable",
       "description": "国际新闻、商业报道、The Debate 与文化节目。",
-      "verification": "官方资料确认电视直播服务；抓取直播页返回 403。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "type": "youtube",
+          "label": "官方 YouTube",
+          "url": "https://www.youtube.com/@France24_en/live",
+          "status": "playable",
+          "liveState": "live",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
+          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
+          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
+          "officialEvidence": [
+            "https://www.youtube.com/watch?v=HvZt-nh9sGg"
+          ],
+          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
+        },
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.france24.com/en/live",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方资料确认电视直播服务；抓取直播页返回 403。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.france24.com/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "dw",
@@ -104,14 +248,46 @@
       "language": "英语",
       "category": "国际新闻",
       "website": "https://www.dw.com/",
-      "liveUrl": "https://www.dw.com/en/live-tv/channel-english",
+      "liveUrl": "https://www.youtube.com/watch?v=LuKwFajn37U",
       "short": "DW",
-      "status": "待播放验证",
+      "status": "playable",
       "description": "德国公共国际广播：新闻、科学、文化及纪录节目。",
-      "verification": "官方应用说明确认免费英文电视直播；网页抓取被 robots 限制。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "type": "youtube",
+          "label": "官方 YouTube",
+          "url": "https://www.youtube.com/watch?v=LuKwFajn37U",
+          "status": "playable",
+          "liveState": "live",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
+          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
+          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
+          "officialEvidence": [
+            "https://www.youtube.com/channel/UCknLrEdhRCp1aegoMqRaCZg"
+          ],
+          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
+        },
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.dw.com/en/live-tv/channel-english",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方应用说明确认免费英文电视直播；网页抓取被 robots 限制。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.dw.com/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "cna",
@@ -120,14 +296,46 @@
       "language": "英语",
       "category": "国际新闻",
       "website": "https://www.channelnewsasia.com/",
-      "liveUrl": "https://www.channelnewsasia.com/watch",
+      "liveUrl": "https://www.youtube.com/@channelnewsasia/live",
       "short": "CNA",
-      "status": "入口已核对",
+      "status": "playable",
       "description": "亚洲新闻、国际时事、Money Mind 与纪录专题。",
-      "verification": "官方 Watch 页面明确说明 24/7 livestream。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "type": "youtube",
+          "label": "官方 YouTube",
+          "url": "https://www.youtube.com/@channelnewsasia/live",
+          "status": "playable",
+          "liveState": "live",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
+          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
+          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
+          "officialEvidence": [
+            "https://www.channelnewsasia.com/singapore/cna-mediacorp-north-america-launch-international-expansion-washington-asia-perspectives-4410281"
+          ],
+          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
+        },
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.channelnewsasia.com/watch",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方 Watch 页面明确说明 24/7 livestream。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.channelnewsasia.com/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "aljazeera",
@@ -136,14 +344,46 @@
       "language": "英语",
       "category": "国际新闻",
       "website": "https://www.aljazeera.com/",
-      "liveUrl": "https://www.aljazeera.com/video/live/",
+      "liveUrl": "https://www.youtube.com/@aljazeeraenglish/live",
       "short": "AJE",
-      "status": "入口已核对",
+      "status": "playable",
       "description": "国际新闻、访谈与全球时事报道。",
-      "verification": "官方 Live 页面包含当前节目及播放器切换。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "type": "youtube",
+          "label": "官方 YouTube",
+          "url": "https://www.youtube.com/@aljazeeraenglish/live",
+          "status": "playable",
+          "liveState": "live",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
+          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
+          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
+          "officialEvidence": [
+            "https://www.aljazeera.com/news/2014/11/9/connect"
+          ],
+          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
+        },
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.aljazeera.com/video/live/",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方 Live 页面包含当前节目及播放器切换。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.aljazeera.com/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "euronews",
@@ -152,14 +392,46 @@
       "language": "英语",
       "category": "国际新闻",
       "website": "https://www.euronews.com/",
-      "liveUrl": "https://www.euronews.com/live",
+      "liveUrl": "https://www.youtube.com/@euronews/live",
       "short": "euronews",
-      "status": "入口已核对",
+      "status": "playable",
       "description": "欧洲新闻、国际时事与商业报道。",
-      "verification": "官方电视直播页面已读取；未实测音视频。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "type": "youtube",
+          "label": "官方 YouTube",
+          "url": "https://www.youtube.com/@euronews/live",
+          "status": "playable",
+          "liveState": "live",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
+          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
+          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
+          "officialEvidence": [
+            "https://www.youtube.com/watch?v=sPgqEHsONK8"
+          ],
+          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
+        },
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.euronews.com/live",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方电视直播页面已读取；未实测音视频。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.euronews.com/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "abc-au",
@@ -168,14 +440,46 @@
       "language": "英语",
       "category": "国家公共广播",
       "website": "https://www.abc.net.au/",
-      "liveUrl": "https://www.abc.net.au/news/newschannel",
+      "liveUrl": "https://www.youtube.com/watch?v=vOTiJkg1voo",
       "short": "ABC AU",
-      "status": "入口已核对",
+      "status": "playable",
       "description": "澳大利亚公共新闻频道与国际报道。",
-      "verification": "官方 News Channel 页面及 Watch Live 入口已读取。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "type": "youtube",
+          "label": "官方 YouTube",
+          "url": "https://www.youtube.com/watch?v=vOTiJkg1voo",
+          "status": "playable",
+          "liveState": "live",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
+          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
+          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
+          "officialEvidence": [
+            "https://help.abc.net.au/hc/en-us/articles/13845760226831-How-can-I-access-ABC-services-overseas"
+          ],
+          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
+        },
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.abc.net.au/news/newschannel",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方 News Channel 页面及 Watch Live 入口已读取。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.abc.net.au/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "cbc",
@@ -186,12 +490,28 @@
       "website": "https://www.cbc.ca/",
       "liveUrl": "https://www.cbc.ca/player/news/live",
       "short": "CBC",
-      "status": "待播放验证",
+      "status": "unverified",
       "description": "加拿大公共广播的免费新闻流与地区报道。",
-      "verification": "CBC 官方媒体资料确认 Explore 免费 24/7 服务；播放器尚未实测。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.cbc.ca/player/news/live",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "CBC 官方媒体资料确认 Explore 免费 24/7 服务；播放器尚未实测。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.cbc.ca/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "tvnz",
@@ -202,12 +522,28 @@
       "website": "https://www.tvnz.co.nz/",
       "liveUrl": "https://www.tvnz.co.nz/player/channel/tvnz-1",
       "short": "TVNZ",
-      "status": "地区 / 登录限制",
+      "status": "region",
       "description": "新西兰新闻与综合电视节目。",
-      "verification": "官方旧直播 URL 重定向到该频道播放器；页面要求 JavaScript。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "仅限新西兰；通常需要免费账户。"
+      "restrictions": "仅限新西兰；通常需要免费账户。",
+      "sources": [
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.tvnz.co.nz/player/channel/tvnz-1",
+          "status": "region",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方旧直播 URL 重定向到该频道播放器；页面要求 JavaScript。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.tvnz.co.nz/"
+          ],
+          "restrictions": "仅限新西兰；通常需要免费账户。"
+        }
+      ]
     },
     {
       "id": "nhk",
@@ -216,14 +552,46 @@
       "language": "英语",
       "category": "国家公共广播",
       "website": "https://www3.nhk.or.jp/",
-      "liveUrl": "https://www3.nhk.or.jp/nhkworld/en/live_tv/",
+      "liveUrl": "https://www.youtube.com/@NHKWORLDJAPAN/live",
       "short": "NHK",
-      "status": "待播放验证",
-      "description": "日本公共国际电视：新闻、文化、旅游与科技。",
-      "verification": "官方域名入口；抓取受限，未实测音视频。",
+      "status": "playable",
+      "description": "NHK WORLD-JAPAN 官方 YouTube 新闻直播。此流以新闻时段为主，可能显示待播画面，不等于完整电视节目表。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "type": "youtube",
+          "label": "官方 YouTube",
+          "url": "https://www.youtube.com/@NHKWORLDJAPAN/live",
+          "status": "playable",
+          "liveState": "live",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
+          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
+          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
+          "officialEvidence": [
+            "https://www.youtube.com/@NHKWORLDJAPAN"
+          ],
+          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
+        },
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www3.nhk.or.jp/nhkworld/en/live_tv/",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方域名入口；抓取受限，未实测音视频。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www3.nhk.or.jp/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "arirang",
@@ -234,12 +602,28 @@
       "website": "https://www.arirang.com/",
       "liveUrl": "https://www.arirang.com/live",
       "short": "ARIRANG",
-      "status": "待播放验证",
+      "status": "unverified",
       "description": "韩国国际英语电视：新闻、时事与文化。",
-      "verification": "官方直播路由可读取但依赖脚本，未确认播放器状态。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.arirang.com/live",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方直播路由可读取但依赖脚本，未确认播放器状态。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.arirang.com/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "rthk",
@@ -250,12 +634,28 @@
       "website": "https://programme.rthk.org.hk/",
       "liveUrl": "https://programme.rthk.org.hk/rthk/tv/player_popup.php?channel=tv&type=live",
       "short": "RTHK",
-      "status": "入口已核对",
+      "status": "unverified",
       "description": "香港公共广播电视、新闻、教育与文化节目。",
-      "verification": "港台官方 Player 页面标明电视直播；进入后选择频道。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://programme.rthk.org.hk/rthk/tv/player_popup.php?channel=tv&type=live",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "港台官方 Player 页面标明电视直播；进入后选择频道。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://programme.rthk.org.hk/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "pts",
@@ -263,15 +663,31 @@
       "country": "台湾",
       "language": "普通话",
       "category": "国家公共广播",
-      "website": "https://www.youtube.com/",
+      "website": "https://news.pts.org.tw/",
       "liveUrl": "https://www.youtube.com/channel/UCexpzYDEnfmAvPSfG4xbcjA/live",
       "short": "PTS",
-      "status": "按播出时段",
+      "status": "unverified",
       "description": "公共电视新闻与专题报道，直播以官方当日安排为准。",
-      "verification": "公视官方频道和官方收讯说明均提供 YouTube 直播入口；不宣称全天直播。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "label": "官方 YouTube 直播入口（未验证）",
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCexpzYDEnfmAvPSfG4xbcjA/live",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "公视官方资料确认该频道身份；当前直播与播放尚未验证。",
+          "officialEvidence": [
+            "https://about.pts.org.tw/service/followpts.html"
+          ],
+          "restrictions": "按官方播出安排；如果没有正在直播，勿把回放当作直播。"
+        }
+      ]
     },
     {
       "id": "tagesschau",
@@ -282,12 +698,28 @@
       "website": "https://www.tagesschau.de/",
       "liveUrl": "https://www.tagesschau.de/multimedia/livestreams/livestream1",
       "short": "TS24",
-      "status": "入口已核对",
+      "status": "unverified",
       "description": "德国公共广播新闻与时事分析。",
-      "verification": "官方 tagesschau24 im Livestream 页面已读取。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.tagesschau.de/multimedia/livestreams/livestream1",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方 tagesschau24 im Livestream 页面已读取。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.tagesschau.de/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
     },
     {
       "id": "nasa",
@@ -298,12 +730,28 @@
       "website": "https://www.nasa.gov/",
       "liveUrl": "https://www.nasa.gov/nasatv/",
       "short": "NASA",
-      "status": "按活动时段",
+      "status": "unverified",
       "description": "航天任务、发射、发布会及科学活动直播。",
-      "verification": "NASA 官方直播入口已读取；NASA TV 已转型，不宣称旧电视流全天播出。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.nasa.gov/nasatv/",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "NASA 官方直播入口已读取；NASA TV 已转型，不宣称旧电视流全天播出。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.nasa.gov/"
+          ],
+          "restrictions": "按航天活动播出；入口可能包含点播内容，未开播时不算正在直播。"
+        }
+      ]
     },
     {
       "id": "trt",
@@ -312,14 +760,97 @@
       "language": "英语",
       "category": "国际新闻",
       "website": "https://www.trtworld.com/",
-      "liveUrl": "https://www.trtworld.com/live",
+      "liveUrl": "https://www.youtube.com/@trtworld/live",
       "short": "TRT",
-      "status": "待播放验证",
+      "status": "playable",
       "description": "国际新闻、分析与访谈节目。",
-      "verification": "官方直播入口已尝试核对；未实测音视频。",
+      "verification": "详见 sources 中每条线路的核对记录。",
       "embedSupported": null,
       "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "type": "youtube",
+          "label": "官方 YouTube",
+          "url": "https://www.youtube.com/@trtworld/live",
+          "status": "playable",
+          "liveState": "live",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
+          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
+          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
+          "officialEvidence": [
+            "https://www.youtube.com/@trtworld",
+            "https://www.youtube.com/watch?v=ABfFhWzWs0s"
+          ],
+          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
+        },
+        {
+          "id": "official-web",
+          "label": "电视台官网",
+          "type": "website",
+          "url": "https://www.trtworld.com/live",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方直播入口已尝试核对；未实测音视频。 本次未验证官网音视频播放。",
+          "officialEvidence": [
+            "https://www.trtworld.com/"
+          ],
+          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+        }
+      ]
+    },
+    {
+      "id": "abc7ny",
+      "name": "ABC7 New York Eyewitness News",
+      "country": "美国",
+      "language": "英语",
+      "category": "地方新闻",
+      "website": "https://abc7ny.com/",
+      "short": "ABC7 NY",
+      "description": "纽约地方新闻、现场报道与天气；官方 ABC7 纽约新闻直播。",
+      "sources": [
+        {
+          "id": "official-youtube",
+          "type": "youtube",
+          "label": "官方 YouTube",
+          "url": "https://www.youtube.com/watch?v=VrhYz4CL70I",
+          "status": "playable",
+          "liveState": "live",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
+          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
+          "verification": "Chrome 实测官方认证 Eyewitness News ABC7NY，播放器运行、有音频、正在观看人数及直播开始日期。",
+          "officialEvidence": [
+            "https://www.youtube.com/@abc7NY"
+          ],
+          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
+        },
+        {
+          "id": "official-web",
+          "type": "website",
+          "label": "ABC7 纽约官网",
+          "url": "https://abc7ny.com/watch/live/",
+          "status": "unverified",
+          "liveState": "unknown",
+          "checkedAt": "2026-10-26T11:35:14+08:00",
+          "verification": "官方机构域名下的直播入口，当前播放器未验证。",
+          "officialEvidence": [
+            "https://www.youtube.com/@abc7NY"
+          ],
+          "restrictions": "部分内容可能按纽约本地播出时段提供。"
+        }
+      ],
+      "liveUrl": "https://www.youtube.com/watch?v=VrhYz4CL70I",
+      "status": "playable",
+      "lastVerified": "2026-10-26",
+      "embedSupported": null,
+      "verification": "详见逐线路证据。",
+      "restrictions": "实际播放受 YouTube 和地区网络影响。"
     }
-  ]
+  ],
+  "schemaVersion": 2,
+  "verificationPolicy": "已验证可播放仅代表核对时本机 Chrome，72 小时后自动降级未验证；不宣称所有地区可播放。"
 }
