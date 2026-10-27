@@ -1,44 +1,49 @@
-# Global TV v2 验证记录
+# 目录升级验收记录
 
-验证日期：2026-10-26（Asia/Shanghai）。本次共 21 条频道记录，14 个国家和地区。
+日期：2026-10-27（Asia/Shanghai）。
 
-## 实际播放通过：11 个
+## 目录规模与来源
 
-使用本机 Mac 的 Google Chrome，逐个打开官方 YouTube 观看入口，检查认证发布者、当前直播指示或正在观看人数、播放器运行状态和 Chrome 音频播放标识；非仅检查 HTTP 200。结果有时间和地区范围，不能保证未来和其他网络。
+130 个来源核实频道，未达到 200 个。国家统计：
 
-- [ABC News Live](https://www.youtube.com/@ABCNews/live)
-- [Sky News](https://www.youtube.com/@SkyNews/live)
-- [France 24 English](https://www.youtube.com/@France24_en/live)
-- [DW English](https://www.youtube.com/watch?v=LuKwFajn37U)
-- [CNA](https://www.youtube.com/@channelnewsasia/live)
-- [Al Jazeera English](https://www.youtube.com/@aljazeeraenglish/live)
-- [Euronews English](https://www.youtube.com/@euronews/live)
-- [ABC NEWS Australia](https://www.youtube.com/watch?v=vOTiJkg1voo)
-- [NHK WORLD-JAPAN](https://www.youtube.com/@NHKWORLDJAPAN/live)
-- [TRT World](https://www.youtube.com/@trtworld/live)
-- [ABC7 New York Eyewitness News](https://www.youtube.com/watch?v=VrhYz4CL70I)
+- 美国：71
+- 英国：14
+- 法国：2
+- 德国：2
+- 新加坡：1
+- 卡塔尔：1
+- 澳大利亚：19
+- 加拿大：13
+- 日本：1
+- 韩国：1
+- 香港：1
+- 台湾：1
+- 土耳其：1
+- 新西兰：2
 
-## 未验证或受限：10 个
+分类统计：
 
-- CBS News 24/7：官方入口存在，当前音视频未通过本次播放测试。
-- NBC News NOW：官方入口存在，当前音视频未通过本次播放测试。
-- Bloomberg Television：官方入口存在，当前音视频未通过本次播放测试。
-- CBC News Explore：官方入口存在，当前音视频未通过本次播放测试。
-- TVNZ 1：地区限制且通常需要免费登录。
-- Arirang TV：官方入口存在，当前音视频未通过本次播放测试。
-- 港台电视 31 / 32：官方入口存在，当前音视频未通过本次播放测试。
-- 公视新闻：官方入口存在，当前音视频未通过本次播放测试。
-- tagesschau24：官方入口存在，当前音视频未通过本次播放测试。
-- NASA Live：官方入口存在，当前音视频未通过本次播放测试。
+- 国际新闻：21
+- 财经商业：3
+- 国家公共广播：8
+- 科技教育：12
+- 地方新闻：62
+- 综合电视节目：6
+- 英语访谈：3
+- 文化纪录片：14
+- 旅行：1
 
-ABC 官网备用播放器：用户报告 An error has occurred，已登记为未验证和有故障报告，未将 HTTP 成功误标为可播放。Bloomberg 与 CBS 的官方 YouTube /live 本次进入频道页面，未确认当前在播，所以保留官网为未验证入口。没有据此断言其全部直播服务失效。未新增 BBC、CTV 等无法在本次确认免费持续直播的候选。
+每条都有可追溯一手依据；见 SOURCES.md 和 channels.json。美国新增台站包含官网出站 YouTube 链接与匹配的频道标题/canonical ID 交叉核对；其他条目采用官方社交目录、认证频道简介和官方节目资料。没有声称所有频道逐个完成当前浏览器播放测试。
 
-## 项目回归验证
+## 状态诚实性
 
-- Node 语法检查及 6 项 source-policy 回归测试通过：优先级、结束/失效/预告跳过、72 小时过期、未来时间戳、反馈 URL、频道契约和旧 ID 保留。
-- 本地浏览器：旧 ABC 收藏仍在；搜索 Sky 返回正确结果；国家/语言筛选、备用面板、故障草稿预览、字幕指南、主题和刷新正常。反馈测试没有点击 GitHub 提交，也没有创建公开 Issue。
-- 播放验证与导航代码分离。Mac 启动文件保持原样；收藏和记录使用原键。
+可靠实时数据：未启用。全部 130 个频道为“当前直播未确认”。只看正在直播禁用，不显示立即观看直播，不把主页、回放或上次人工测试当作实时数据。旧版 11 个播放通过记录仅作为历史。
 
-## 持续维护
+## 已运行检查
 
-每次修改 sources 后运行 node --test source-policy.test.cjs；经人工播放核验才能标 playable。过期状态在刷新和交互时按 72 小时有效期重新计算，不是后台自动复测。
+- 8 项 Node 回归测试通过，覆盖地址规范化与视频拒绝、去重、CSV 引号/换行、导入证据要求、本地待复核、实时数据新鲜度、城市语言筛选、反馈草稿和公共数据契约。最低 100 个公共频道为测试要求。
+- app.js、core.js、catalog-tool.cjs 语法检查通过。
+- 命令行实际合并测试：2 条输入，新增 1 条、重复跳过 1 条；新增保持待复核，没有污染公共目录。
+- 本地浏览器：130 频道加载；旧 ABC 收藏保留；波士顿中文城市搜索返回 WCVB；加拿大筛选 13 条；实时筛选禁用；导入 2 条新增 1 条去重 1 条；本地编辑刷新后保留，移除后恢复 130 条；控制台无错误。测试条目没有发布。
+
+GitHub 提交与公开页面验证以最终交付说明中的提交和部署记录为准。

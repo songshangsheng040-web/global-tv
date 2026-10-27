@@ -1,195 +1,218 @@
 {
-  "updatedAt": "2026-10-26 · 直播源升级 v2",
+  "schemaVersion": 3,
+  "title": "Global TV｜全球 YouTube 频道大全",
+  "updatedAt": "2026-10-27 · 官方频道目录 v3",
+  "liveStatus": {
+    "available": false,
+    "provider": null,
+    "checkedAt": null,
+    "message": "未接入可靠实时状态数据。全部频道当前直播未确认；主页和直播列表均为官方频道入口。"
+  },
+  "retiredChannels": [
+    {
+      "id": "tvnz",
+      "name": "TVNZ 1",
+      "reason": "此前为官网电视直播，没有将其他节目频道冒充 TVNZ 1；旧收藏 ID 保留。"
+    }
+  ],
   "channels": [
     {
       "id": "abc-us",
       "name": "ABC News Live",
       "country": "美国",
+      "region": "New York",
+      "city": "New York",
+      "cityAliases": [
+        "纽约"
+      ],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@ABCNews",
+      "streamsUrl": "https://www.youtube.com/@ABCNews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://abcnews.com/",
-      "liveUrl": "https://www.youtube.com/@ABCNews/live",
+      "description": "官方新闻频道，包含直播与重播节目。",
       "short": "ABC",
-      "status": "playable",
-      "description": "24/7 新闻频道，包含直播与重播节目。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://abcnews.com/US/abc-news-live/story?id=65127516",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国际新闻节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": [
         {
-          "id": "official-youtube",
-          "type": "youtube",
-          "label": "官方 YouTube",
-          "url": "https://www.youtube.com/@ABCNews/live",
-          "status": "playable",
-          "liveState": "live",
           "checkedAt": "2026-10-26T11:35:14+08:00",
-          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
-          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
-          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
-          "officialEvidence": [
-            "https://abcnews.com/US/abc-news-live/story?id=65127516"
-          ],
-          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
-        },
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://abcnews.com/Live",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "用户报告官网播放器显示 An error has occurred. Please contact support for more assistance. 不能据此断定链接失效，也不标记可播放。",
-          "officialEvidence": [
-            "https://abcnews.com/"
-          ],
-          "restrictions": "已收到播放器错误报告；建议优先使用官方 YouTube。"
+          "note": "旧版在本机 Chrome 通过播放测试；仅历史记录，不作为当前在播依据。"
         }
       ]
     },
     {
       "id": "cbs",
-      "name": "CBS News 24/7",
+      "name": "CBS News",
       "country": "美国",
+      "region": "New York",
+      "city": "New York",
+      "cityAliases": [
+        "纽约"
+      ],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@CBSNews",
+      "streamsUrl": "https://www.youtube.com/@CBSNews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.cbsnews.com/",
-      "liveUrl": "https://www.cbsnews.com/live/",
-      "short": "CBS",
-      "status": "unverified",
       "description": "美国新闻、国际报道与访谈。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.cbsnews.com/live/",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方页面标明免费 24/7 新闻直播。 本次未验证官网音视频播放。 官方 @CBSNews/live 本次进入频道页，未确认在播，因此不新增 YouTube 播放线路。",
-          "officialEvidence": [
-            "https://www.cbsnews.com/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
-        }
-      ]
+      "short": "CBS",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.cbsnews.com/streaming/",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国际新闻节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": []
     },
     {
       "id": "nbc",
-      "name": "NBC News NOW",
+      "name": "NBC News",
       "country": "美国",
+      "region": "New York",
+      "city": "New York",
+      "cityAliases": [
+        "纽约"
+      ],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@NBCNews",
+      "streamsUrl": "https://www.youtube.com/@NBCNews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.nbcnews.com/",
-      "liveUrl": "https://www.nbcnews.com/now",
-      "short": "NBC",
-      "status": "unverified",
       "description": "滚动新闻、现场报道和专题访谈。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.nbcnews.com/now",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "自动抓取被 robots 限制；未实测音视频。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.nbcnews.com/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
-        }
-      ]
+      "short": "NBC",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://nbcnews.zendesk.com/hc/en-us/articles/45174718134419-What-is-NBC-News-NOW",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国际新闻节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": []
     },
     {
       "id": "bloomberg",
-      "name": "Bloomberg Television",
+      "name": "Bloomberg",
       "country": "美国",
+      "region": "New York",
+      "city": "New York",
+      "cityAliases": [
+        "纽约"
+      ],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "财经商业",
+      "youtubeUrl": "https://www.youtube.com/@bloomberglp",
+      "streamsUrl": "https://www.youtube.com/@bloomberglp/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.bloomberg.com/",
-      "liveUrl": "https://www.bloomberg.com/live",
-      "short": "BTV",
-      "status": "unverified",
       "description": "全球金融市场、商业访谈和经济新闻。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.bloomberg.com/live",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方 video 页面提供 Live Bloomberg Television 入口；未实测播放。 本次未验证官网音视频播放。 官方 @bloomberglp/live 本次进入频道页，未确认在播，因此不新增 YouTube 播放线路。",
-          "officialEvidence": [
-            "https://www.bloomberg.com/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
-        }
-      ]
+      "short": "BTV",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.bloomberg.com/live",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与财经商业节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": []
     },
     {
       "id": "sky",
       "name": "Sky News",
       "country": "英国",
+      "region": "England",
+      "city": "London",
+      "cityAliases": [
+        "伦敦"
+      ],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@SkyNews",
+      "streamsUrl": "https://www.youtube.com/@SkyNews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://news.sky.com/",
-      "liveUrl": "https://www.youtube.com/@SkyNews/live",
-      "short": "SKY",
-      "status": "playable",
       "description": "英国与全球突发新闻、时事分析。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
+      "short": "SKY",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/@SkyNews",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国际新闻节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": [
         {
-          "id": "official-youtube",
-          "type": "youtube",
-          "label": "官方 YouTube",
-          "url": "https://www.youtube.com/@SkyNews/live",
-          "status": "playable",
-          "liveState": "live",
           "checkedAt": "2026-10-26T11:35:14+08:00",
-          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
-          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
-          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
-          "officialEvidence": [
-            "https://www.youtube.com/@SkyNews"
-          ],
-          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
-        },
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://news.sky.com/watch-live",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方 Watch Sky News Live 页面已读取。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://news.sky.com/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+          "note": "旧版在本机 Chrome 通过播放测试；仅历史记录，不作为当前在播依据。"
         }
       ]
     },
@@ -197,47 +220,40 @@
       "id": "france24",
       "name": "France 24 English",
       "country": "法国",
+      "region": "Île-de-France",
+      "city": "Paris",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@France24_en",
+      "streamsUrl": "https://www.youtube.com/@France24_en/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.france24.com/",
-      "liveUrl": "https://www.youtube.com/@France24_en/live",
-      "short": "F24",
-      "status": "playable",
       "description": "国际新闻、商业报道、The Debate 与文化节目。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
+      "short": "F24",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国际新闻节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": [
         {
-          "id": "official-youtube",
-          "type": "youtube",
-          "label": "官方 YouTube",
-          "url": "https://www.youtube.com/@France24_en/live",
-          "status": "playable",
-          "liveState": "live",
           "checkedAt": "2026-10-26T11:35:14+08:00",
-          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
-          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
-          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
-          "officialEvidence": [
-            "https://www.youtube.com/watch?v=HvZt-nh9sGg"
-          ],
-          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
-        },
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.france24.com/en/live",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方资料确认电视直播服务；抓取直播页返回 403。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.france24.com/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+          "note": "旧版在本机 Chrome 通过播放测试；仅历史记录，不作为当前在播依据。"
         }
       ]
     },
@@ -245,47 +261,40 @@
       "id": "dw",
       "name": "DW English",
       "country": "德国",
+      "region": "North Rhine-Westphalia",
+      "city": "Bonn",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@dwnews",
+      "streamsUrl": "https://www.youtube.com/@dwnews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.dw.com/",
-      "liveUrl": "https://www.youtube.com/watch?v=LuKwFajn37U",
-      "short": "DW",
-      "status": "playable",
       "description": "德国公共国际广播：新闻、科学、文化及纪录节目。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
+      "short": "DW",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCknLrEdhRCp1aegoMqRaCZg",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国际新闻节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": [
         {
-          "id": "official-youtube",
-          "type": "youtube",
-          "label": "官方 YouTube",
-          "url": "https://www.youtube.com/watch?v=LuKwFajn37U",
-          "status": "playable",
-          "liveState": "live",
           "checkedAt": "2026-10-26T11:35:14+08:00",
-          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
-          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
-          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
-          "officialEvidence": [
-            "https://www.youtube.com/channel/UCknLrEdhRCp1aegoMqRaCZg"
-          ],
-          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
-        },
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.dw.com/en/live-tv/channel-english",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方应用说明确认免费英文电视直播；网页抓取被 robots 限制。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.dw.com/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+          "note": "旧版在本机 Chrome 通过播放测试；仅历史记录，不作为当前在播依据。"
         }
       ]
     },
@@ -293,47 +302,40 @@
       "id": "cna",
       "name": "CNA",
       "country": "新加坡",
+      "region": "",
+      "city": "Singapore",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@channelnewsasia",
+      "streamsUrl": "https://www.youtube.com/@channelnewsasia/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.channelnewsasia.com/",
-      "liveUrl": "https://www.youtube.com/@channelnewsasia/live",
-      "short": "CNA",
-      "status": "playable",
       "description": "亚洲新闻、国际时事、Money Mind 与纪录专题。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
+      "short": "CNA",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.channelnewsasia.com/singapore/cna-mediacorp-north-america-launch-international-expansion-washington-asia-perspectives-4410281",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国际新闻节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": [
         {
-          "id": "official-youtube",
-          "type": "youtube",
-          "label": "官方 YouTube",
-          "url": "https://www.youtube.com/@channelnewsasia/live",
-          "status": "playable",
-          "liveState": "live",
           "checkedAt": "2026-10-26T11:35:14+08:00",
-          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
-          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
-          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
-          "officialEvidence": [
-            "https://www.channelnewsasia.com/singapore/cna-mediacorp-north-america-launch-international-expansion-washington-asia-perspectives-4410281"
-          ],
-          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
-        },
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.channelnewsasia.com/watch",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方 Watch 页面明确说明 24/7 livestream。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.channelnewsasia.com/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+          "note": "旧版在本机 Chrome 通过播放测试；仅历史记录，不作为当前在播依据。"
         }
       ]
     },
@@ -341,47 +343,40 @@
       "id": "aljazeera",
       "name": "Al Jazeera English",
       "country": "卡塔尔",
+      "region": "",
+      "city": "Doha",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@aljazeeraenglish",
+      "streamsUrl": "https://www.youtube.com/@aljazeeraenglish/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.aljazeera.com/",
-      "liveUrl": "https://www.youtube.com/@aljazeeraenglish/live",
-      "short": "AJE",
-      "status": "playable",
       "description": "国际新闻、访谈与全球时事报道。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
+      "short": "AJE",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.aljazeera.com/news/2014/11/9/connect",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国际新闻节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": [
         {
-          "id": "official-youtube",
-          "type": "youtube",
-          "label": "官方 YouTube",
-          "url": "https://www.youtube.com/@aljazeeraenglish/live",
-          "status": "playable",
-          "liveState": "live",
           "checkedAt": "2026-10-26T11:35:14+08:00",
-          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
-          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
-          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
-          "officialEvidence": [
-            "https://www.aljazeera.com/news/2014/11/9/connect"
-          ],
-          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
-        },
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.aljazeera.com/video/live/",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方 Live 页面包含当前节目及播放器切换。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.aljazeera.com/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+          "note": "旧版在本机 Chrome 通过播放测试；仅历史记录，不作为当前在播依据。"
         }
       ]
     },
@@ -389,47 +384,40 @@
       "id": "euronews",
       "name": "Euronews English",
       "country": "法国",
+      "region": "Auvergne-Rhône-Alpes",
+      "city": "Lyon",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@euronews",
+      "streamsUrl": "https://www.youtube.com/@euronews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.euronews.com/",
-      "liveUrl": "https://www.youtube.com/@euronews/live",
-      "short": "euronews",
-      "status": "playable",
       "description": "欧洲新闻、国际时事与商业报道。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
+      "short": "euronews",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=sPgqEHsONK8",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国际新闻节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": [
         {
-          "id": "official-youtube",
-          "type": "youtube",
-          "label": "官方 YouTube",
-          "url": "https://www.youtube.com/@euronews/live",
-          "status": "playable",
-          "liveState": "live",
           "checkedAt": "2026-10-26T11:35:14+08:00",
-          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
-          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
-          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
-          "officialEvidence": [
-            "https://www.youtube.com/watch?v=sPgqEHsONK8"
-          ],
-          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
-        },
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.euronews.com/live",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方电视直播页面已读取；未实测音视频。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.euronews.com/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+          "note": "旧版在本机 Chrome 通过播放测试；仅历史记录，不作为当前在播依据。"
         }
       ]
     },
@@ -437,159 +425,121 @@
       "id": "abc-au",
       "name": "ABC NEWS Australia",
       "country": "澳大利亚",
+      "region": "New South Wales",
+      "city": "Sydney",
+      "cityAliases": [
+        "悉尼"
+      ],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国家公共广播",
+      "youtubeUrl": "https://www.youtube.com/@abcnewsaustralia",
+      "streamsUrl": "https://www.youtube.com/@abcnewsaustralia/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.abc.net.au/",
-      "liveUrl": "https://www.youtube.com/watch?v=vOTiJkg1voo",
-      "short": "ABC AU",
-      "status": "playable",
       "description": "澳大利亚公共新闻频道与国际报道。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
+      "short": "ABC AU",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/13845760226831-How-can-I-access-ABC-services-overseas",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国家公共广播节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": [
         {
-          "id": "official-youtube",
-          "type": "youtube",
-          "label": "官方 YouTube",
-          "url": "https://www.youtube.com/watch?v=vOTiJkg1voo",
-          "status": "playable",
-          "liveState": "live",
           "checkedAt": "2026-10-26T11:35:14+08:00",
-          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
-          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
-          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
-          "officialEvidence": [
-            "https://help.abc.net.au/hc/en-us/articles/13845760226831-How-can-I-access-ABC-services-overseas"
-          ],
-          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
-        },
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.abc.net.au/news/newschannel",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方 News Channel 页面及 Watch Live 入口已读取。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.abc.net.au/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+          "note": "旧版在本机 Chrome 通过播放测试；仅历史记录，不作为当前在播依据。"
         }
       ]
     },
     {
       "id": "cbc",
-      "name": "CBC News Explore",
+      "name": "CBC News",
       "country": "加拿大",
+      "region": "Ontario",
+      "city": "Toronto",
+      "cityAliases": [
+        "多伦多"
+      ],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国家公共广播",
+      "youtubeUrl": "https://www.youtube.com/channel/UCuFFtHWoLl5fauMMD5Ww2jA",
+      "streamsUrl": "https://www.youtube.com/channel/UCuFFtHWoLl5fauMMD5Ww2jA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.cbc.ca/",
-      "liveUrl": "https://www.cbc.ca/player/news/live",
-      "short": "CBC",
-      "status": "unverified",
       "description": "加拿大公共广播的免费新闻流与地区报道。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.cbc.ca/player/news/live",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "CBC 官方媒体资料确认 Explore 免费 24/7 服务；播放器尚未实测。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.cbc.ca/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
-        }
-      ]
-    },
-    {
-      "id": "tvnz",
-      "name": "TVNZ 1",
-      "country": "新西兰",
-      "language": "英语",
-      "category": "综合电视节目",
-      "website": "https://www.tvnz.co.nz/",
-      "liveUrl": "https://www.tvnz.co.nz/player/channel/tvnz-1",
-      "short": "TVNZ",
-      "status": "region",
-      "description": "新西兰新闻与综合电视节目。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "仅限新西兰；通常需要免费账户。",
-      "sources": [
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.tvnz.co.nz/player/channel/tvnz-1",
-          "status": "region",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方旧直播 URL 重定向到该频道播放器；页面要求 JavaScript。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.tvnz.co.nz/"
-          ],
-          "restrictions": "仅限新西兰；通常需要免费账户。"
-        }
-      ]
+      "short": "CBC",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://solutionsmedia.cbcrc.ca/en/platforms/cbc-news-explore",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国家公共广播节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": []
     },
     {
       "id": "nhk",
       "name": "NHK WORLD-JAPAN",
       "country": "日本",
+      "region": "",
+      "city": "Tokyo",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国家公共广播",
+      "youtubeUrl": "https://www.youtube.com/@NHKWORLDJAPAN",
+      "streamsUrl": "https://www.youtube.com/@NHKWORLDJAPAN/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www3.nhk.or.jp/",
-      "liveUrl": "https://www.youtube.com/@NHKWORLDJAPAN/live",
-      "short": "NHK",
-      "status": "playable",
       "description": "NHK WORLD-JAPAN 官方 YouTube 新闻直播。此流以新闻时段为主，可能显示待播画面，不等于完整电视节目表。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
+      "short": "NHK",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/@NHKWORLDJAPAN",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国家公共广播节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": [
         {
-          "id": "official-youtube",
-          "type": "youtube",
-          "label": "官方 YouTube",
-          "url": "https://www.youtube.com/@NHKWORLDJAPAN/live",
-          "status": "playable",
-          "liveState": "live",
           "checkedAt": "2026-10-26T11:35:14+08:00",
-          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
-          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
-          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
-          "officialEvidence": [
-            "https://www.youtube.com/@NHKWORLDJAPAN"
-          ],
-          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
-        },
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www3.nhk.or.jp/nhkworld/en/live_tv/",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方域名入口；抓取受限，未实测音视频。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www3.nhk.or.jp/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+          "note": "旧版在本机 Chrome 通过播放测试；仅历史记录，不作为当前在播依据。"
         }
       ]
     },
@@ -597,208 +547,220 @@
       "id": "arirang",
       "name": "Arirang TV",
       "country": "韩国",
+      "region": "",
+      "city": "Seoul",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国家公共广播",
+      "youtubeUrl": "https://www.youtube.com/user/arirang",
+      "streamsUrl": "https://www.youtube.com/user/arirang/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.arirang.com/",
-      "liveUrl": "https://www.arirang.com/live",
-      "short": "ARIRANG",
-      "status": "unverified",
       "description": "韩国国际英语电视：新闻、时事与文化。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.arirang.com/live",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方直播路由可读取但依赖脚本，未确认播放器状态。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.arirang.com/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
-        }
-      ]
+      "short": "ARIRANG",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.arirang.com/download/Arirang_TV_Proposal_EN.pdf",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国家公共广播节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": []
     },
     {
       "id": "rthk",
-      "name": "港台电视 31 / 32",
+      "name": "RTHK 香港電台",
       "country": "香港",
+      "region": "",
+      "city": "Hong Kong",
+      "cityAliases": [],
+      "languages": [
+        "粤语"
+      ],
       "language": "粤语",
       "category": "国家公共广播",
+      "youtubeUrl": "https://www.youtube.com/channel/UC6of7UYhctnYmqABjUqzuxw",
+      "streamsUrl": "https://www.youtube.com/channel/UC6of7UYhctnYmqABjUqzuxw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://programme.rthk.org.hk/",
-      "liveUrl": "https://programme.rthk.org.hk/rthk/tv/player_popup.php?channel=tv&type=live",
-      "short": "RTHK",
-      "status": "unverified",
       "description": "香港公共广播电视、新闻、教育与文化节目。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://programme.rthk.org.hk/rthk/tv/player_popup.php?channel=tv&type=live",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "港台官方 Player 页面标明电视直播；进入后选择频道。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://programme.rthk.org.hk/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
-        }
-      ]
+      "short": "RTHK",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.rthk.hk/sharing/",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国家公共广播节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": []
     },
     {
       "id": "pts",
       "name": "公视新闻",
       "country": "台湾",
+      "region": "",
+      "city": "Taipei",
+      "cityAliases": [],
+      "languages": [
+        "普通话"
+      ],
       "language": "普通话",
       "category": "国家公共广播",
+      "youtubeUrl": "https://www.youtube.com/channel/UCexpzYDEnfmAvPSfG4xbcjA",
+      "streamsUrl": "https://www.youtube.com/channel/UCexpzYDEnfmAvPSfG4xbcjA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://news.pts.org.tw/",
-      "liveUrl": "https://www.youtube.com/channel/UCexpzYDEnfmAvPSfG4xbcjA/live",
-      "short": "PTS",
-      "status": "unverified",
       "description": "公共电视新闻与专题报道，直播以官方当日安排为准。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
-        {
-          "id": "official-youtube",
-          "label": "官方 YouTube 直播入口（未验证）",
-          "type": "youtube",
-          "url": "https://www.youtube.com/channel/UCexpzYDEnfmAvPSfG4xbcjA/live",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "公视官方资料确认该频道身份；当前直播与播放尚未验证。",
-          "officialEvidence": [
-            "https://about.pts.org.tw/service/followpts.html"
-          ],
-          "restrictions": "按官方播出安排；如果没有正在直播，勿把回放当作直播。"
-        }
-      ]
+      "short": "PTS",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://about.pts.org.tw/service/followpts.html",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国家公共广播节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": []
     },
     {
       "id": "tagesschau",
-      "name": "tagesschau24",
+      "name": "tagesschau",
       "country": "德国",
+      "region": "",
+      "city": "Hamburg",
+      "cityAliases": [],
+      "languages": [
+        "德语"
+      ],
       "language": "德语",
       "category": "国家公共广播",
+      "youtubeUrl": "https://www.youtube.com/tagesschau",
+      "streamsUrl": "https://www.youtube.com/tagesschau/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.tagesschau.de/",
-      "liveUrl": "https://www.tagesschau.de/multimedia/livestreams/livestream1",
+      "description": "德国公共广播新闻节目官方 YouTube 频道，包含新闻、时事与点播。",
       "short": "TS24",
-      "status": "unverified",
-      "description": "德国公共广播新闻与时事分析。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.tagesschau.de/multimedia/livestreams/livestream1",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方 tagesschau24 im Livestream 页面已读取。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.tagesschau.de/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
-        }
-      ]
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.tagesschau.de/mehr/tagesschau-soziale-netzwerke-ts-100.html",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国家公共广播节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": []
     },
     {
       "id": "nasa",
-      "name": "NASA Live",
+      "name": "NASA",
       "country": "美国",
+      "region": "District of Columbia",
+      "city": "Washington, DC",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
-      "category": "科学教育",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/NASA",
+      "streamsUrl": "https://www.youtube.com/NASA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.nasa.gov/",
-      "liveUrl": "https://www.nasa.gov/nasatv/",
+      "description": "NASA 官方航天、科学教育与任务节目。直播按活动安排，亦有点播。",
       "short": "NASA",
-      "status": "unverified",
-      "description": "航天任务、发射、发布会及科学活动直播。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.nasa.gov/nasatv/",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "NASA 官方直播入口已读取；NASA TV 已转型，不宣称旧电视流全天播出。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.nasa.gov/"
-          ],
-          "restrictions": "按航天活动播出；入口可能包含点播内容，未开播时不算正在直播。"
-        }
-      ]
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.nasa.gov/social-media/",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与科学教育节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": []
     },
     {
       "id": "trt",
       "name": "TRT World",
       "country": "土耳其",
+      "region": "",
+      "city": "Istanbul",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@trtworld",
+      "streamsUrl": "https://www.youtube.com/@trtworld/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://www.trtworld.com/",
-      "liveUrl": "https://www.youtube.com/@trtworld/live",
-      "short": "TRT",
-      "status": "playable",
       "description": "国际新闻、分析与访谈节目。",
-      "verification": "详见 sources 中每条线路的核对记录。",
-      "embedSupported": null,
-      "lastVerified": "2026-10-26",
-      "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。",
-      "sources": [
+      "short": "TRT",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=ABfFhWzWs0s",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与国际新闻节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": [
         {
-          "id": "official-youtube",
-          "type": "youtube",
-          "label": "官方 YouTube",
-          "url": "https://www.youtube.com/@trtworld/live",
-          "status": "playable",
-          "liveState": "live",
           "checkedAt": "2026-10-26T11:35:14+08:00",
-          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
-          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
-          "verification": "浏览器实际打开并观察直播播放器，非仅检查 HTTP 响应。",
-          "officialEvidence": [
-            "https://www.youtube.com/@trtworld",
-            "https://www.youtube.com/watch?v=ABfFhWzWs0s"
-          ],
-          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
-        },
-        {
-          "id": "official-web",
-          "label": "电视台官网",
-          "type": "website",
-          "url": "https://www.trtworld.com/live",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方直播入口已尝试核对；未实测音视频。 本次未验证官网音视频播放。",
-          "officialEvidence": [
-            "https://www.trtworld.com/"
-          ],
-          "restrictions": "可能受地区、版权、广告拦截或网络影响；以官方页面为准。"
+          "note": "旧版在本机 Chrome 通过播放测试；仅历史记录，不作为当前在播依据。"
         }
       ]
     },
@@ -806,51 +768,3975 @@
       "id": "abc7ny",
       "name": "ABC7 New York Eyewitness News",
       "country": "美国",
+      "region": "New York",
+      "city": "New York",
+      "cityAliases": [
+        "纽约"
+      ],
+      "languages": [
+        "英语"
+      ],
       "language": "英语",
       "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/@abc7NY",
+      "streamsUrl": "https://www.youtube.com/@abc7NY/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
       "website": "https://abc7ny.com/",
-      "short": "ABC7 NY",
       "description": "纽约地方新闻、现场报道与天气；官方 ABC7 纽约新闻直播。",
-      "sources": [
+      "short": "ABC7 NY",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/@abc7NY",
+            "note": "已核对该机构官方资料或官方 YouTube 发布者身份；频道名称与地方新闻节目类型相符。原有目录中的官方身份依据保留，可展开查看；不代表当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false,
+      "historicalLive": [
         {
-          "id": "official-youtube",
-          "type": "youtube",
-          "label": "官方 YouTube",
-          "url": "https://www.youtube.com/watch?v=VrhYz4CL70I",
-          "status": "playable",
-          "liveState": "live",
           "checkedAt": "2026-10-26T11:35:14+08:00",
-          "playbackVerifiedAt": "2026-10-26T11:35:14+08:00",
-          "playbackEvidence": "本机 Mac Chrome：官方认证频道、正在直播指示、播放器运行并有音频；不保证其他地区。",
-          "verification": "Chrome 实测官方认证 Eyewitness News ABC7NY，播放器运行、有音频、正在观看人数及直播开始日期。",
-          "officialEvidence": [
-            "https://www.youtube.com/@abc7NY"
-          ],
-          "restrictions": "YouTube 可用性及字幕功能取决于网络、地区和设备；直播可能结束。"
-        },
-        {
-          "id": "official-web",
-          "type": "website",
-          "label": "ABC7 纽约官网",
-          "url": "https://abc7ny.com/watch/live/",
-          "status": "unverified",
-          "liveState": "unknown",
-          "checkedAt": "2026-10-26T11:35:14+08:00",
-          "verification": "官方机构域名下的直播入口，当前播放器未验证。",
-          "officialEvidence": [
-            "https://www.youtube.com/@abc7NY"
-          ],
-          "restrictions": "部分内容可能按纽约本地播出时段提供。"
+          "note": "旧版在本机 Chrome 通过播放测试；仅历史记录，不作为当前在播依据。"
         }
+      ]
+    },
+    {
+      "id": "us-kgo",
+      "name": "ABC7 News Bay Area",
+      "country": "美国",
+      "region": "California",
+      "city": "San Francisco",
+      "cityAliases": [
+        "旧金山"
       ],
-      "liveUrl": "https://www.youtube.com/watch?v=VrhYz4CL70I",
-      "status": "playable",
-      "lastVerified": "2026-10-26",
-      "embedSupported": null,
-      "verification": "详见逐线路证据。",
-      "restrictions": "实际播放受 YouTube 和地区网络影响。"
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCYUbNjkuE4lsr2v1Id2O1oA",
+      "streamsUrl": "https://www.youtube.com/channel/UCYUbNjkuE4lsr2v1Id2O1oA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://abc7news.com/",
+      "description": "YouTube 索引频道页显示 Verified，简介明确为官方 ABC7 Bay Area；关键词标明 KGO、San Francisco。",
+      "short": "ABC7 News Ba",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCYUbNjkuE4lsr2v1Id2O1oA",
+            "note": "YouTube 索引频道页显示 Verified，简介明确为官方 ABC7 Bay Area；关键词标明 KGO、San Francisco。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-kabc",
+      "name": "ABC7 Los Angeles",
+      "country": "美国",
+      "region": "California",
+      "city": "Los Angeles",
+      "cityAliases": [
+        "洛杉矶"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCVxBA3Cbu3pm8w8gEIoMEog",
+      "streamsUrl": "https://www.youtube.com/channel/UCVxBA3Cbu3pm8w8gEIoMEog/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://abc7.com/",
+      "description": "YouTube 索引频道页显示 Verified；简介明确是洛杉矶及南加州 ABC Owned Television Station。",
+      "short": "ABC7 Los Ang",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCVxBA3Cbu3pm8w8gEIoMEog",
+            "note": "YouTube 索引频道页显示 Verified；简介明确是洛杉矶及南加州 ABC Owned Television Station。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wls",
+      "name": "ABC7 Chicago",
+      "country": "美国",
+      "region": "Illinois",
+      "city": "Chicago",
+      "cityAliases": [
+        "芝加哥"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC_vFLohxs5PkAxlk7Y6jEtw",
+      "streamsUrl": "https://www.youtube.com/channel/UC_vFLohxs5PkAxlk7Y6jEtw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://abc7chicago.com/",
+      "description": "官方应用页列出 YouTube；公开频道 ID 链接打开后标题为 ABC 7 Chicago。身份与地方新闻类型由 ABC 官方台站资料交叉核对；非播放测试。",
+      "short": "ABC7 Chicago",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://abc7chicago.com/apps/",
+            "note": "官方应用页列出 YouTube；公开频道 ID 链接打开后标题为 ABC 7 Chicago。身份与地方新闻类型由 ABC 官方台站资料交叉核对；非播放测试。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wnbc",
+      "name": "NBC New York",
+      "country": "美国",
+      "region": "New York",
+      "city": "New York",
+      "cityAliases": [
+        "纽约"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/@NBCNewYork",
+      "streamsUrl": "https://www.youtube.com/@NBCNewYork/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.nbcnewyork.com/",
+      "description": "NBC 官方说明确认纽约地方新闻机构；YouTube 频道 URL 打开标题为 NBC New York。未核实当前直播。",
+      "short": "NBC New York",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.nbcnewyork.com/news/local/how-to-watch-new-york-news-weather-live-free/5631080/",
+            "note": "NBC 官方说明确认纽约地方新闻机构；YouTube 频道 URL 打开标题为 NBC New York。未核实当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wnyw",
+      "name": "FOX 5 New York",
+      "country": "美国",
+      "region": "New York",
+      "city": "New York",
+      "cityAliases": [
+        "纽约"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCIjSUWHWp6KohfnR5OQTXnQ",
+      "streamsUrl": "https://www.youtube.com/channel/UCIjSUWHWp6KohfnR5OQTXnQ/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.fox5ny.com/",
+      "description": "YouTube 索引频道页显示 Verified，简介明确为官方 FOX 5 NY 和 Good Day New York，内容为纽约新闻天气。",
+      "short": "FOX 5 New Yo",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCIjSUWHWp6KohfnR5OQTXnQ",
+            "note": "YouTube 索引频道页显示 Verified，简介明确为官方 FOX 5 NY 和 Good Day New York，内容为纽约新闻天气。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wpix",
+      "name": "PIX11 News",
+      "country": "美国",
+      "region": "New York",
+      "city": "New York",
+      "cityAliases": [
+        "纽约"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCnWi59TPymx0_qt7PX3VeNA",
+      "streamsUrl": "https://www.youtube.com/channel/UCnWi59TPymx0_qt7PX3VeNA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://pix11.com/",
+      "description": "YouTube 索引频道页显示 Verified，简介明确为纽约 WPIX-TV Channel 11 及三州新闻天气。",
+      "short": "PIX11 News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCnWi59TPymx0_qt7PX3VeNA",
+            "note": "YouTube 索引频道页显示 Verified，简介明确为纽约 WPIX-TV Channel 11 及三州新闻天气。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-kttv",
+      "name": "FOX 11 Los Angeles",
+      "country": "美国",
+      "region": "California",
+      "city": "Los Angeles",
+      "cityAliases": [
+        "洛杉矶"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCHfF8wFnipMeDpJf8OmMxDg",
+      "streamsUrl": "https://www.youtube.com/channel/UCHfF8wFnipMeDpJf8OmMxDg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.foxla.com/",
+      "description": "FOX 11 官网专页明确要求订阅 youtube.com/foxla；YouTube 索引页确认官方 FOX 11 Los Angeles 和 KTTV 身份。",
+      "short": "FOX 11 Los A",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.foxla.com/youtube",
+            "note": "FOX 11 官网专页明确要求订阅 youtube.com/foxla；YouTube 索引页确认官方 FOX 11 Los Angeles 和 KTTV 身份。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wgn",
+      "name": "WGN News",
+      "country": "美国",
+      "region": "Illinois",
+      "city": "Chicago",
+      "cityAliases": [
+        "芝加哥"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCDrLGkZTcNCshOLiKi5NtEw",
+      "streamsUrl": "https://www.youtube.com/channel/UCDrLGkZTcNCshOLiKi5NtEw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://wgntv.com/",
+      "description": "YouTube 新闻视频发布者 WGN News 显示 Verified；该公开频道 ID 页面打开标题为 WGN News。地方电视身份为芝加哥 WGN。",
+      "short": "WGN News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=EhTpGbl7C18",
+            "note": "YouTube 新闻视频发布者 WGN News 显示 Verified；该公开频道 ID 页面打开标题为 WGN News。地方电视身份为芝加哥 WGN。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-ktla",
+      "name": "KTLA 5",
+      "country": "美国",
+      "region": "California",
+      "city": "Los Angeles",
+      "cityAliases": [
+        "洛杉矶"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCinjnmQEwCddOudyCC1v7qA",
+      "streamsUrl": "https://www.youtube.com/channel/UCinjnmQEwCddOudyCC1v7qA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://ktla.com/",
+      "description": "公开 YouTube 频道 ID 页面打开标题为 KTLA 5；检索频道介绍说明覆盖洛杉矶、Orange、Riverside 等南加州新闻。未核实当前直播。",
+      "short": "KTLA 5",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCinjnmQEwCddOudyCC1v7qA",
+            "note": "公开 YouTube 频道 ID 页面打开标题为 KTLA 5；检索频道介绍说明覆盖洛杉矶、Orange、Riverside 等南加州新闻。未核实当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-ktvu",
+      "name": "KTVU FOX 2 San Francisco",
+      "country": "美国",
+      "region": "California",
+      "city": "Oakland / San Francisco",
+      "cityAliases": [
+        "旧金山"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/@ktvufox2",
+      "streamsUrl": "https://www.youtube.com/@ktvufox2/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.ktvu.com/",
+      "description": "YouTube 视频由 Verified 的 KTVU FOX 2 San Francisco 发布，说明直接列出 @ktvufox2，描述旧金山湾区地方新闻。",
+      "short": "KTVU FOX 2 S",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=Ebwtvqckrxo",
+            "note": "YouTube 视频由 Verified 的 KTVU FOX 2 San Francisco 发布，说明直接列出 @ktvufox2，描述旧金山湾区地方新闻。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-ktbc",
+      "name": "FOX 7 Austin",
+      "country": "美国",
+      "region": "Texas",
+      "city": "Austin",
+      "cityAliases": [
+        "奥斯汀"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC5maSolHQX9er0BOxrzjMwA",
+      "streamsUrl": "https://www.youtube.com/channel/UC5maSolHQX9er0BOxrzjMwA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.fox7austin.com/",
+      "description": "YouTube 索引频道简介明确称官方 FOX 7 Austin，覆盖 Central Texas 新闻、天气、体育。",
+      "short": "FOX 7 Austin",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UC5maSolHQX9er0BOxrzjMwA",
+            "note": "YouTube 索引频道简介明确称官方 FOX 7 Austin，覆盖 Central Texas 新闻、天气、体育。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wtvt",
+      "name": "FOX 13 Tampa Bay",
+      "country": "美国",
+      "region": "Florida",
+      "city": "Tampa",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC13mSI38YWz5zfvxXDPpePA",
+      "streamsUrl": "https://www.youtube.com/channel/UC13mSI38YWz5zfvxXDPpePA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.fox13news.com/",
+      "description": "YouTube 索引频道页显示 Verified，简介明确是 WTVT-TV 的官方频道和 Tampa Bay 地方新闻。",
+      "short": "FOX 13 Tampa",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UC13mSI38YWz5zfvxXDPpePA",
+            "note": "YouTube 索引频道页显示 Verified，简介明确是 WTVT-TV 的官方频道和 Tampa Bay 地方新闻。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-ksaz",
+      "name": "FOX 10 Phoenix",
+      "country": "美国",
+      "region": "Arizona",
+      "city": "Phoenix",
+      "cityAliases": [
+        "凤凰城"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCNjfNLnQYbjBEvnS8KFuyGQ",
+      "streamsUrl": "https://www.youtube.com/channel/UCNjfNLnQYbjBEvnS8KFuyGQ/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.fox10phoenix.com/",
+      "description": "YouTube 索引频道显示 Verified，简介明确 Phoenix Arizona 地区新闻、天气、交通和政治。",
+      "short": "FOX 10 Phoen",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCNjfNLnQYbjBEvnS8KFuyGQ",
+            "note": "YouTube 索引频道显示 Verified，简介明确 Phoenix Arizona 地区新闻、天气、交通和政治。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wfor",
+      "name": "CBS Miami",
+      "country": "美国",
+      "region": "Florida",
+      "city": "Miami",
+      "cityAliases": [
+        "迈阿密"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCXJryYh6xcW5iEeJGzK191A",
+      "streamsUrl": "https://www.youtube.com/channel/UCXJryYh6xcW5iEeJGzK191A/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbsnews.com/miami/",
+      "description": "YouTube 索引频道页显示 Verified，简介明确为官方 CBS Miami、South Florida 地方新闻及天气。",
+      "short": "CBS Miami",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCXJryYh6xcW5iEeJGzK191A",
+            "note": "YouTube 索引频道页显示 Verified，简介明确为官方 CBS Miami、South Florida 地方新闻及天气。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-kyw",
+      "name": "CBS Philadelphia",
+      "country": "美国",
+      "region": "Pennsylvania",
+      "city": "Philadelphia",
+      "cityAliases": [
+        "费城"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCVuFPbAjTi3mqpH-0veJRWg",
+      "streamsUrl": "https://www.youtube.com/channel/UCVuFPbAjTi3mqpH-0veJRWg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbsnews.com/philadelphia/",
+      "description": "YouTube 索引频道简介和关键词明确 CBS KYW、Philadelphia、South Jersey、Delaware 的地方新闻。",
+      "short": "CBS Philadel",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCVuFPbAjTi3mqpH-0veJRWg",
+            "note": "YouTube 索引频道简介和关键词明确 CBS KYW、Philadelphia、South Jersey、Delaware 的地方新闻。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wcco",
+      "name": "WCCO - CBS Minnesota",
+      "country": "美国",
+      "region": "Minnesota",
+      "city": "Minneapolis / Saint Paul",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCry2gCVdntv6r661sKUiKXw",
+      "streamsUrl": "https://www.youtube.com/channel/UCry2gCVdntv6r661sKUiKXw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbsnews.com/minnesota/",
+      "description": "YouTube 索引频道页显示 Verified；简介明确官方 WCCO News / CBS Minnesota，关键词为 Twin Cities 地方新闻。",
+      "short": "WCCO - CBS M",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCry2gCVdntv6r661sKUiKXw",
+            "note": "YouTube 索引频道页显示 Verified；简介明确官方 WCCO News / CBS Minnesota，关键词为 Twin Cities 地方新闻。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wjz",
+      "name": "WJZ CBS Baltimore",
+      "country": "美国",
+      "region": "Maryland",
+      "city": "Baltimore",
+      "cityAliases": [
+        "巴尔的摩"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UClYiny8IhDsIk5SivucNl7g",
+      "streamsUrl": "https://www.youtube.com/channel/UClYiny8IhDsIk5SivucNl7g/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbsnews.com/baltimore/",
+      "description": "YouTube 索引频道页显示 Verified，简介和关键词明确 WJZ / CBS Baltimore 地方新闻、天气。",
+      "short": "WJZ CBS Balt",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UClYiny8IhDsIk5SivucNl7g",
+            "note": "YouTube 索引频道页显示 Verified，简介和关键词明确 WJZ / CBS Baltimore 地方新闻、天气。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-ktvt",
+      "name": "CBS Texas",
+      "country": "美国",
+      "region": "Texas",
+      "city": "Dallas / Fort Worth",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/@cbstexas",
+      "streamsUrl": "https://www.youtube.com/@cbstexas/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbsnews.com/texas/",
+      "description": "CBS TEXAS 在 YouTube 官方发布视频的说明直接给出 @cbstexas 订阅入口；CBS 官方台站说明确认 Texas 地方新闻机构。",
+      "short": "CBS Texas",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=FRuwwNK-XPE",
+            "note": "CBS TEXAS 在 YouTube 官方发布视频的说明直接给出 @cbstexas 订阅入口；CBS 官方台站说明确认 Texas 地方新闻机构。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-king",
+      "name": "KING 5 Seattle",
+      "country": "美国",
+      "region": "Washington",
+      "city": "Seattle",
+      "cityAliases": [
+        "西雅图"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCp1KrVaZDZ7BOI_QBuTWWmg",
+      "streamsUrl": "https://www.youtube.com/channel/UCp1KrVaZDZ7BOI_QBuTWWmg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.king5.com/",
+      "description": "YouTube 索引频道简介明确 KING 5 News (NBC Seattle)、TEGNA 及 Seattle 地方新闻。",
+      "short": "KING 5 Seatt",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCp1KrVaZDZ7BOI_QBuTWWmg",
+            "note": "YouTube 索引频道简介明确 KING 5 News (NBC Seattle)、TEGNA 及 Seattle 地方新闻。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-komo",
+      "name": "KOMO News",
+      "country": "美国",
+      "region": "Washington",
+      "city": "Seattle",
+      "cityAliases": [
+        "西雅图"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/@komonews",
+      "streamsUrl": "https://www.youtube.com/@komonews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://komonews.com/",
+      "description": "YouTube 视频发布者 KOMO News 显示 Verified；说明直接列出 @komonews，标明 ABC 4、Seattle 和 Western Washington 新闻。",
+      "short": "KOMO News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=RwfByXYpHNc",
+            "note": "YouTube 视频发布者 KOMO News 显示 Verified；说明直接列出 @komonews，标明 ABC 4、Seattle 和 Western Washington 新闻。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-kusa",
+      "name": "9NEWS Denver",
+      "country": "美国",
+      "region": "Colorado",
+      "city": "Denver",
+      "cityAliases": [
+        "丹佛"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC72nbKQLSDyiSARhg0Ywj4w",
+      "streamsUrl": "https://www.youtube.com/channel/UC72nbKQLSDyiSARhg0Ywj4w/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.9news.com/",
+      "description": "YouTube 索引频道页显示 Verified；简介明确 KUSA / 9NEWS Denver，覆盖 Colorado 新闻天气。",
+      "short": "9NEWS Denver",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UC72nbKQLSDyiSARhg0Ywj4w",
+            "note": "YouTube 索引频道页显示 Verified；简介明确 KUSA / 9NEWS Denver，覆盖 Colorado 新闻天气。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wcvb",
+      "name": "WCVB Channel 5 Boston",
+      "country": "美国",
+      "region": "马萨诸塞州",
+      "city": "Boston",
+      "cityAliases": [
+        "波士顿"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC72UssJ1DNQcakZXm-B2-zw",
+      "streamsUrl": "https://www.youtube.com/channel/UC72UssJ1DNQcakZXm-B2-zw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wcvb.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/wcvbtv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Boston 地方新闻；未验证正在直播或视频播放。",
+      "short": "WCVB Channel",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wcvb.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/wcvbtv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Boston 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wbal",
+      "name": "WBAL-TV 11 Baltimore",
+      "country": "美国",
+      "region": "马里兰州",
+      "city": "Baltimore",
+      "cityAliases": [
+        "巴尔的摩"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCpmb83_U37eDBlgEezsxK7w",
+      "streamsUrl": "https://www.youtube.com/channel/UCpmb83_U37eDBlgEezsxK7w/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wbaltv.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/wbal 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Baltimore 地方新闻；未验证正在直播或视频播放。",
+      "short": "WBAL-TV 11 B",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wbaltv.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/wbal 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Baltimore 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wlwt",
+      "name": "WLWT",
+      "country": "美国",
+      "region": "俄亥俄州",
+      "city": "Cincinnati",
+      "cityAliases": [
+        "辛辛那提"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCkr9qZ5tj9dGd7JvE3a8X4Q",
+      "streamsUrl": "https://www.youtube.com/channel/UCkr9qZ5tj9dGd7JvE3a8X4Q/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wlwt.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/wlwttv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Cincinnati 地方新闻；未验证正在直播或视频播放。",
+      "short": "WLWT",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wlwt.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/wlwttv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Cincinnati 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wesh",
+      "name": "WESH 2 News",
+      "country": "美国",
+      "region": "佛罗里达州",
+      "city": "Orlando",
+      "cityAliases": [
+        "奥兰多"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCD9nZ3qeRGbPuHJaJduiQxA",
+      "streamsUrl": "https://www.youtube.com/channel/UCD9nZ3qeRGbPuHJaJduiQxA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wesh.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/weshtv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Orlando 地方新闻；未验证正在直播或视频播放。",
+      "short": "WESH 2 News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wesh.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/weshtv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Orlando 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wisn",
+      "name": "WISN 12 News",
+      "country": "美国",
+      "region": "威斯康星州",
+      "city": "Milwaukee",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC8Tm7Xuz8QekHzjsDxgFNnw",
+      "streamsUrl": "https://www.youtube.com/channel/UC8Tm7Xuz8QekHzjsDxgFNnw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wisn.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/wisn 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Milwaukee 地方新闻；未验证正在直播或视频播放。",
+      "short": "WISN 12 News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wisn.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/wisn 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Milwaukee 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-kcra",
+      "name": "KCRA 3",
+      "country": "美国",
+      "region": "加利福尼亚州",
+      "city": "Sacramento",
+      "cityAliases": [
+        "萨克拉门托"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC-BSVXejMFhhml4V_VyoGxg",
+      "streamsUrl": "https://www.youtube.com/channel/UC-BSVXejMFhhml4V_VyoGxg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.kcra.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/kcratv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Sacramento 地方新闻；未验证正在直播或视频播放。",
+      "short": "KCRA 3",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.kcra.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/kcratv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Sacramento 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-koat",
+      "name": "KOAT Action 7 News",
+      "country": "美国",
+      "region": "新墨西哥州",
+      "city": "Albuquerque",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC41xJSNY2xCPC4-gOsRcDcg",
+      "streamsUrl": "https://www.youtube.com/channel/UC41xJSNY2xCPC4-gOsRcDcg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.koat.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/koattv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Albuquerque 地方新闻；未验证正在直播或视频播放。",
+      "short": "KOAT Action ",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.koat.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/koattv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Albuquerque 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-kmbc",
+      "name": "KMBC 9",
+      "country": "美国",
+      "region": "密苏里州",
+      "city": "Kansas City",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCWTkpYvniGIUe1jeCncFzKw",
+      "streamsUrl": "https://www.youtube.com/channel/UCWTkpYvniGIUe1jeCncFzKw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.kmbc.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/kmbctv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Kansas City 地方新闻；未验证正在直播或视频播放。",
+      "short": "KMBC 9",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.kmbc.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/kmbctv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Kansas City 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-kcci",
+      "name": "KCCI 8 News",
+      "country": "美国",
+      "region": "艾奥瓦州",
+      "city": "Des Moines",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCKATGvvbOznaWNZcOBCLGng",
+      "streamsUrl": "https://www.youtube.com/channel/UCKATGvvbOznaWNZcOBCLGng/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.kcci.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/kccitv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Des Moines 地方新闻；未验证正在直播或视频播放。",
+      "short": "KCCI 8 News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.kcci.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/kccitv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Des Moines 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wpbf",
+      "name": "WPBF 25 News",
+      "country": "美国",
+      "region": "佛罗里达州",
+      "city": "West Palm Beach",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCeD5NwvPbEZKcu02_v8tUZQ",
+      "streamsUrl": "https://www.youtube.com/channel/UCeD5NwvPbEZKcu02_v8tUZQ/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wpbf.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/WPBF 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 West Palm Beach 地方新闻；未验证正在直播或视频播放。",
+      "short": "WPBF 25 News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wpbf.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/WPBF 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 West Palm Beach 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wdsu",
+      "name": "WDSU News",
+      "country": "美国",
+      "region": "路易斯安那州",
+      "city": "New Orleans",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCh6B4Wr5marHaAhH27VR9GA",
+      "streamsUrl": "https://www.youtube.com/channel/UCh6B4Wr5marHaAhH27VR9GA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wdsu.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/wdsutv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 New Orleans 地方新闻；未验证正在直播或视频播放。",
+      "short": "WDSU News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wdsu.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/wdsutv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 New Orleans 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-ketv",
+      "name": "KETV NewsWatch 7",
+      "country": "美国",
+      "region": "内布拉斯加州",
+      "city": "Omaha",
+      "cityAliases": [
+        "奥马哈"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCczdiIilpYSmiF074WMCNiA",
+      "streamsUrl": "https://www.youtube.com/channel/UCczdiIilpYSmiF074WMCNiA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.ketv.com/",
+      "description": "直接读取电视台官网，发现其 YouTube /user/ketvtv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Omaha 地方新闻；未验证正在直播或视频播放。",
+      "short": "KETV NewsWat",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.ketv.com/",
+            "note": "直接读取电视台官网，发现其 YouTube /user/ketvtv 链接；跟随该链接读取 YouTube 页面标题与 canonical 频道 ID，与本站名称一致。官网内容为 Omaha 地方新闻；未验证正在直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wgal",
+      "name": "WGAL News 8",
+      "country": "美国",
+      "region": "宾夕法尼亚州",
+      "city": "Lancaster / Harrisburg / York",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCaqEHP76q9TblVUO3sHFSQQ",
+      "streamsUrl": "https://www.youtube.com/channel/UCaqEHP76q9TblVUO3sHFSQQ/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wgal.com/",
+      "description": "直接读取官网，页面标题为 York, Lancaster and Harrisburg PA News, Weather and Sports - WGAL Channel 8，含官方 YouTube 链接 https://www.youtube.com/user/wgaltv；跟随链接读取 YouTube 标题 wgaltv - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "WGAL News 8",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wgal.com/",
+            "note": "直接读取官网，页面标题为 York, Lancaster and Harrisburg PA News, Weather and Sports - WGAL Channel 8，含官方 YouTube 链接 https://www.youtube.com/user/wgaltv；跟随链接读取 YouTube 标题 wgaltv - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wmur",
+      "name": "WMUR-TV",
+      "country": "美国",
+      "region": "新罕布什尔州",
+      "city": "Manchester",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCwuZjWoiT30kDTz0G41Y8gQ",
+      "streamsUrl": "https://www.youtube.com/channel/UCwuZjWoiT30kDTz0G41Y8gQ/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wmur.com/",
+      "description": "直接读取官网，页面标题为 Manchester, New Hampshire News and Weather - WMUR Channel 9，含官方 YouTube 链接 https://www.youtube.com/user/wmurtv；跟随链接读取 YouTube 标题 WMUR-TV - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "WMUR-TV",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wmur.com/",
+            "note": "直接读取官网，页面标题为 Manchester, New Hampshire News and Weather - WMUR Channel 9，含官方 YouTube 链接 https://www.youtube.com/user/wmurtv；跟随链接读取 YouTube 标题 WMUR-TV - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wyff",
+      "name": "WYFF News 4",
+      "country": "美国",
+      "region": "南卡罗来纳州",
+      "city": "Greenville",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC3UxJWrUACd2Hk4dMAQKOyw",
+      "streamsUrl": "https://www.youtube.com/channel/UC3UxJWrUACd2Hk4dMAQKOyw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wyff4.com/",
+      "description": "直接读取官网，页面标题为 Greenville SC News and Weather - WYFF News 4，含官方 YouTube 链接 https://www.youtube.com/user/wyfftv；跟随链接读取 YouTube 标题 WYFF News 4 - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "WYFF News 4",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wyff4.com/",
+            "note": "直接读取官网，页面标题为 Greenville SC News and Weather - WYFF News 4，含官方 YouTube 链接 https://www.youtube.com/user/wyfftv；跟随链接读取 YouTube 标题 WYFF News 4 - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wlky",
+      "name": "WLKY News Louisville",
+      "country": "美国",
+      "region": "肯塔基州",
+      "city": "Louisville",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCojNA7ZvnmGuIvYnm44wl3Q",
+      "streamsUrl": "https://www.youtube.com/channel/UCojNA7ZvnmGuIvYnm44wl3Q/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wlky.com/",
+      "description": "直接读取官网，页面标题为 Louisville, KY News, Weather and Sports - WLKY Channel 32，含官方 YouTube 链接 https://www.youtube.com/user/wlkytv；跟随链接读取 YouTube 标题 WLKY News Louisville - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "WLKY News Lo",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wlky.com/",
+            "note": "直接读取官网，页面标题为 Louisville, KY News, Weather and Sports - WLKY Channel 32，含官方 YouTube 链接 https://www.youtube.com/user/wlkytv；跟随链接读取 YouTube 标题 WLKY News Louisville - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wtae",
+      "name": "WTAE-TV Pittsburgh",
+      "country": "美国",
+      "region": "宾夕法尼亚州",
+      "city": "Pittsburgh",
+      "cityAliases": [
+        "匹兹堡"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCWAsWgFVqxDzwExfOdYjAcg",
+      "streamsUrl": "https://www.youtube.com/channel/UCWAsWgFVqxDzwExfOdYjAcg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wtae.com/",
+      "description": "直接读取官网，页面标题为 Pittsburgh PA News, Weather and Sports - WTAE-TV Pittsburgh Action News 4，含官方 YouTube 链接 https://www.youtube.com/user/wtaetv；跟随链接读取 YouTube 标题 WTAE-TV Pittsburgh - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "WTAE-TV Pitt",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wtae.com/",
+            "note": "直接读取官网，页面标题为 Pittsburgh PA News, Weather and Sports - WTAE-TV Pittsburgh Action News 4，含官方 YouTube 链接 https://www.youtube.com/user/wtaetv；跟随链接读取 YouTube 标题 WTAE-TV Pittsburgh - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-koco",
+      "name": "KOCO 5 News",
+      "country": "美国",
+      "region": "俄克拉何马州",
+      "city": "Oklahoma City",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCoIhMkbeDRBImkGiA5mZp5A",
+      "streamsUrl": "https://www.youtube.com/channel/UCoIhMkbeDRBImkGiA5mZp5A/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.koco.com/",
+      "description": "直接读取官网，页面标题为 Oklahoma City News, Weather and Sports - KOCO 5 News，含官方 YouTube 链接 https://www.youtube.com/user/kocotv；跟随链接读取 YouTube 标题 KOCO 5 News - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "KOCO 5 News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.koco.com/",
+            "note": "直接读取官网，页面标题为 Oklahoma City News, Weather and Sports - KOCO 5 News，含官方 YouTube 链接 https://www.youtube.com/user/kocotv；跟随链接读取 YouTube 标题 KOCO 5 News - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-ksbw",
+      "name": "KSBW Action News 8",
+      "country": "美国",
+      "region": "加利福尼亚州",
+      "city": "Salinas / Monterey / Santa Cruz",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCwPzlQU2MqEQJWgqM_0VFKQ",
+      "streamsUrl": "https://www.youtube.com/channel/UCwPzlQU2MqEQJWgqM_0VFKQ/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.ksbw.com/",
+      "description": "直接读取官网，页面标题为 Monterey, Salinas and Santa Cruz, CA News and Weather - KSBW Channel 8，含官方 YouTube 链接 https://www.youtube.com/user/ksbwtv；跟随链接读取 YouTube 标题 KSBW Action News 8 - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "KSBW Action ",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.ksbw.com/",
+            "note": "直接读取官网，页面标题为 Monterey, Salinas and Santa Cruz, CA News and Weather - KSBW Channel 8，含官方 YouTube 链接 https://www.youtube.com/user/ksbwtv；跟随链接读取 YouTube 标题 KSBW Action News 8 - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wapt",
+      "name": "16 WAPT News Jackson",
+      "country": "美国",
+      "region": "密西西比州",
+      "city": "Jackson",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCq6jYgbPEh-lttcUsvPCbsg",
+      "streamsUrl": "https://www.youtube.com/channel/UCq6jYgbPEh-lttcUsvPCbsg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wapt.com/",
+      "description": "直接读取官网，页面标题为 Jackson, MS News, Weather and Sports - WAPT Channel 16，含官方 YouTube 链接 https://www.youtube.com/user/wapttv；跟随链接读取 YouTube 标题 16 WAPT News Jackson - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "16 WAPT News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wapt.com/",
+            "note": "直接读取官网，页面标题为 Jackson, MS News, Weather and Sports - WAPT Channel 16，含官方 YouTube 链接 https://www.youtube.com/user/wapttv；跟随链接读取 YouTube 标题 16 WAPT News Jackson - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wmtw",
+      "name": "WMTW-TV",
+      "country": "美国",
+      "region": "缅因州",
+      "city": "Portland",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCqvtjfI2zzRl_2W_KpEnuMg",
+      "streamsUrl": "https://www.youtube.com/channel/UCqvtjfI2zzRl_2W_KpEnuMg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wmtw.com/",
+      "description": "直接读取官网，页面标题为 Portland, Maine News and Weather - WMTW Channel 8，含官方 YouTube 链接 https://www.youtube.com/user/wmtwtv；跟随链接读取 YouTube 标题 WMTW-TV - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "WMTW-TV",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wmtw.com/",
+            "note": "直接读取官网，页面标题为 Portland, Maine News and Weather - WMTW Channel 8，含官方 YouTube 链接 https://www.youtube.com/user/wmtwtv；跟随链接读取 YouTube 标题 WMTW-TV - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wptz",
+      "name": "MyNBC5-WPTZ",
+      "country": "美国",
+      "region": "佛蒙特州 / 纽约州",
+      "city": "Burlington / Plattsburgh",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCO3KF4ZlaGjyels6A7riZug",
+      "streamsUrl": "https://www.youtube.com/channel/UCO3KF4ZlaGjyels6A7riZug/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.mynbc5.com/",
+      "description": "直接读取官网，页面标题为 Burlington, VT and Plattsburgh, NY News and Weather - My NBC5，含官方 YouTube 链接 https://www.youtube.com/user/wptz；跟随链接读取 YouTube 标题 MyNBC5-WPTZ - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "MyNBC5-WPTZ",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.mynbc5.com/",
+            "note": "直接读取官网，页面标题为 Burlington, VT and Plattsburgh, NY News and Weather - My NBC5，含官方 YouTube 链接 https://www.youtube.com/user/wptz；跟随链接读取 YouTube 标题 MyNBC5-WPTZ - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-khbs",
+      "name": "40/29 News KHBS/KHOG",
+      "country": "美国",
+      "region": "阿肯色州",
+      "city": "Fort Smith / Fayetteville",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC-b1JdevG6fVeb06rRN_Xhw",
+      "streamsUrl": "https://www.youtube.com/channel/UC-b1JdevG6fVeb06rRN_Xhw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.4029tv.com/",
+      "description": "直接读取官网，页面标题为 Northwest Arkansas &amp; River Valley News, Weather and Sports - KHBS/KHOG 40/29 News，含官方 YouTube 链接 https://www.youtube.com/user/4029tv；跟随链接读取 YouTube 标题 40/29 News - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "40/29 News K",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.4029tv.com/",
+            "note": "直接读取官网，页面标题为 Northwest Arkansas &amp; River Valley News, Weather and Sports - KHBS/KHOG 40/29 News，含官方 YouTube 链接 https://www.youtube.com/user/4029tv；跟随链接读取 YouTube 标题 40/29 News - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-wxii",
+      "name": "WXII 12 News",
+      "country": "美国",
+      "region": "北卡罗来纳州",
+      "city": "Winston-Salem / Greensboro / High Point",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC0ZsHHC_frpcqneDpMiteCQ",
+      "streamsUrl": "https://www.youtube.com/channel/UC0ZsHHC_frpcqneDpMiteCQ/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wxii12.com/",
+      "description": "直接读取官网，页面标题为 Winston-Salem, Greensboro and High Point NC News and Weather - WXII Channel 12，含官方 YouTube 链接 https://www.youtube.com/user/WXIItv；跟随链接读取 YouTube 标题 WXII 12 News - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+      "short": "WXII 12 News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://www.wxii12.com/",
+            "note": "直接读取官网，页面标题为 Winston-Salem, Greensboro and High Point NC News and Weather - WXII Channel 12，含官方 YouTube 链接 https://www.youtube.com/user/WXIItv；跟随链接读取 YouTube 标题 WXII 12 News - YouTube 及 canonical 频道 ID。未验证直播或视频播放。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "cbc-toronto",
+      "name": "CBC News Toronto",
+      "country": "加拿大",
+      "region": "Ontario",
+      "city": "Toronto",
+      "cityAliases": [
+        "多伦多"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCFsB6ruUukbK9KYuPIRFH7Q",
+      "streamsUrl": "https://www.youtube.com/channel/UCFsB6ruUukbK9KYuPIRFH7Q/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbc.ca/news/canada/toronto",
+      "description": "已读取索引中的 YouTube 认证频道页：@CBCToronto，描述明确覆盖 Toronto 与 Greater Toronto Area；仅核实频道身份和类型，非当前直播状态。",
+      "short": "CBC News Tor",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCFsB6ruUukbK9KYuPIRFH7Q",
+            "note": "已读取索引中的 YouTube 认证频道页：@CBCToronto，描述明确覆盖 Toronto 与 Greater Toronto Area；仅核实频道身份和类型，非当前直播状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "cbc-ottawa",
+      "name": "CBC Ottawa",
+      "country": "加拿大",
+      "region": "Ontario",
+      "city": "Ottawa",
+      "cityAliases": [
+        "渥太华"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCZ65IifPBxWunHdJCTi_GYA",
+      "streamsUrl": "https://www.youtube.com/channel/UCZ65IifPBxWunHdJCTi_GYA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbc.ca/news/canada/ottawa",
+      "description": "索引中的 YouTube 页描述为 CBC Ottawa 官方频道、社区新闻报道；频道页面存在，非当前直播证明。",
+      "short": "CBC Ottawa",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCZ65IifPBxWunHdJCTi_GYA",
+            "note": "索引中的 YouTube 页描述为 CBC Ottawa 官方频道、社区新闻报道；频道页面存在，非当前直播证明。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "cbc-sask",
+      "name": "CBC News Saskatchewan",
+      "country": "加拿大",
+      "region": "Saskatchewan",
+      "city": "Regina",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCvdbpUpDg1cA4f_Jfg_-_TQ",
+      "streamsUrl": "https://www.youtube.com/channel/UCvdbpUpDg1cA4f_Jfg_-_TQ/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbc.ca/news/canada/saskatchewan",
+      "description": "已读取 YouTube 索引认证频道 @cbcsask，描述明确为 CBC Saskatchewan 官方频道，内容为本省新闻。索引观看人数不作为实时状态。",
+      "short": "CBC News Sas",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCvdbpUpDg1cA4f_Jfg_-_TQ",
+            "note": "已读取 YouTube 索引认证频道 @cbcsask，描述明确为 CBC Saskatchewan 官方频道，内容为本省新闻。索引观看人数不作为实时状态。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "cbc-bc",
+      "name": "CBC British Columbia",
+      "country": "加拿大",
+      "region": "British Columbia",
+      "city": "Vancouver",
+      "cityAliases": [
+        "温哥华"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/@cbcbritishcolumbia",
+      "streamsUrl": "https://www.youtube.com/@cbcbritishcolumbia/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbc.ca/bc",
+      "description": "YouTube 主页面返回 CBC British Columbia 标题；频道简介/节目资料为 CBC B.C. 地方新闻。网页抓取仅返回简化页面，当前直播未确认。",
+      "short": "CBC British ",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/@cbcbritishcolumbia",
+            "note": "YouTube 主页面返回 CBC British Columbia 标题；频道简介/节目资料为 CBC B.C. 地方新闻。网页抓取仅返回简化页面，当前直播未确认。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "cbc-ns",
+      "name": "CBC News Nova Scotia",
+      "country": "加拿大",
+      "region": "Nova Scotia",
+      "city": "Halifax",
+      "cityAliases": [
+        "哈利法克斯"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/@cbcns",
+      "streamsUrl": "https://www.youtube.com/@cbcns/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbc.ca/news/canada/nova-scotia",
+      "description": "YouTube 主页面返回 CBC News Nova Scotia 标题；CBC 节目说明链接同一 @cbcns，报道 Halifax 与 Nova Scotia。仅为官方频道入口。",
+      "short": "CBC News Nov",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/@cbcns",
+            "note": "YouTube 主页面返回 CBC News Nova Scotia 标题；CBC 节目说明链接同一 @cbcns，报道 Halifax 与 Nova Scotia。仅为官方频道入口。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "ctv-news",
+      "name": "CTV News",
+      "country": "加拿大",
+      "region": "Ontario",
+      "city": "Toronto",
+      "cityAliases": [
+        "多伦多"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@ctvnews",
+      "streamsUrl": "https://www.youtube.com/@ctvnews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.ctvnews.ca/",
+      "description": "Bell Media 官方资料确认 CTV 全国及地方新闻组织；YouTube @ctvnews 主页面返回 CTV News 标题，未确认当前直播。",
+      "short": "CTV News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.bellmedia.ca/the-lede/tv/ctv-news/",
+            "note": "Bell Media 官方资料确认 CTV 全国及地方新闻组织；YouTube @ctvnews 主页面返回 CTV News 标题，未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "citynews",
+      "name": "CityNews",
+      "country": "加拿大",
+      "region": "Ontario / British Columbia / Alberta",
+      "city": "Toronto / Vancouver / Calgary",
+      "cityAliases": [
+        "多伦多",
+        "温哥华"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCVKAcQQCO8vv87Gk62SutAg",
+      "streamsUrl": "https://www.youtube.com/channel/UCVKAcQQCO8vv87Gk62SutAg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://toronto.citynews.ca/",
+      "description": "CityNews 官方 Connect 页面直接链接此 YouTube channel ID，并明确为加拿大各城市地方新闻；YouTube 标题返回 CityNews。",
+      "short": "CityNews",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://toronto.citynews.ca/connect/",
+            "note": "CityNews 官方 Connect 页面直接链接此 YouTube channel ID，并明确为加拿大各城市地方新闻；YouTube 标题返回 CityNews。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "bbc-london",
+      "name": "BBC London",
+      "country": "英国",
+      "region": "England",
+      "city": "London",
+      "cityAliases": [
+        "伦敦"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCBwejc-awS-mANgrkHQ5-6A",
+      "streamsUrl": "https://www.youtube.com/channel/UCBwejc-awS-mANgrkHQ5-6A/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.bbc.co.uk/news/england/london",
+      "description": "已读取索引中的认证 YouTube @bbclondon，描述及关键词明确 BBC London 城市新闻；非全天直播承诺。",
+      "short": "BBC London",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCBwejc-awS-mANgrkHQ5-6A",
+            "note": "已读取索引中的认证 YouTube @bbclondon，描述及关键词明确 BBC London 城市新闻；非全天直播承诺。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "bbc-scotland",
+      "name": "BBC Scotland",
+      "country": "英国",
+      "region": "Scotland",
+      "city": "Glasgow",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "综合电视节目",
+      "youtubeUrl": "https://www.youtube.com/channel/UCXFVUI21c7n7wx6PmlkXJww",
+      "streamsUrl": "https://www.youtube.com/channel/UCXFVUI21c7n7wx6PmlkXJww/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.bbc.co.uk/bbcscotland",
+      "description": "YouTube 主页面返回 BBC Scotland 标题；频道节目资料为 BBC Scotland 精选、苏格兰文化和地方节目。当前直播未确认。",
+      "short": "BBC Scotland",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCXFVUI21c7n7wx6PmlkXJww",
+            "note": "YouTube 主页面返回 BBC Scotland 标题；频道节目资料为 BBC Scotland 精选、苏格兰文化和地方节目。当前直播未确认。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "bbc-wales",
+      "name": "BBC Cymru Wales",
+      "country": "英国",
+      "region": "Wales",
+      "city": "Cardiff",
+      "cityAliases": [],
+      "languages": [
+        "英语",
+        "威尔士语"
+      ],
+      "language": "英语",
+      "category": "综合电视节目",
+      "youtubeUrl": "https://www.youtube.com/channel/UCNH53DFjL1OBl3oWNxMmC_Q",
+      "streamsUrl": "https://www.youtube.com/channel/UCNH53DFjL1OBl3oWNxMmC_Q/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.bbc.co.uk/wales",
+      "description": "YouTube 索引频道描述明确为官方 BBC Cymru Wales、TV Radio Online、Made in Wales；包含英语及威尔士语内容。",
+      "short": "BBC Cymru Wa",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCNH53DFjL1OBl3oWNxMmC_Q",
+            "note": "YouTube 索引频道描述明确为官方 BBC Cymru Wales、TV Radio Online、Made in Wales；包含英语及威尔士语内容。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "bbc-ni",
+      "name": "BBC Northern Ireland",
+      "country": "英国",
+      "region": "Northern Ireland",
+      "city": "Belfast",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "综合电视节目",
+      "youtubeUrl": "https://www.youtube.com/channel/UCAwTHwWoyi_2jgB_lQjyIyg",
+      "streamsUrl": "https://www.youtube.com/channel/UCAwTHwWoyi_2jgB_lQjyIyg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.bbc.co.uk/northernireland",
+      "description": "BBC 官方新闻资料列出 youtube.com/bbcnorthernireland；YouTube 索引频道描述明确为官方 BBC Northern Ireland。仅核实身份。",
+      "short": "BBC Northern",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://downloads.bbc.co.uk/mediacentre/regional_pi_pdfs/2013/nipiwk42.pdf",
+            "note": "BBC 官方新闻资料列出 youtube.com/bbcnorthernireland；YouTube 索引频道描述明确为官方 BBC Northern Ireland。仅核实身份。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "itv-news",
+      "name": "ITV News",
+      "country": "英国",
+      "region": "England",
+      "city": "London",
+      "cityAliases": [
+        "伦敦"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCFQgi22Ht00CpaOQLtvZx2A",
+      "streamsUrl": "https://www.youtube.com/channel/UCFQgi22Ht00CpaOQLtvZx2A/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.itv.com/news",
+      "description": "YouTube 索引认证 @ITVNews 描述为 ITV 国内外新闻、分析和访谈，当前直播未确认。",
+      "short": "ITV News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCFQgi22Ht00CpaOQLtvZx2A",
+            "note": "YouTube 索引认证 @ITVNews 描述为 ITV 国内外新闻、分析和访谈，当前直播未确认。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "itv-news-in-full",
+      "name": "ITV News In Full",
+      "country": "英国",
+      "region": "England / Channel Islands",
+      "city": "London / Jersey",
+      "cityAliases": [
+        "伦敦"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/@itvnewsinfull",
+      "streamsUrl": "https://www.youtube.com/@itvnewsinfull/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.itv.com/news",
+      "description": "ITV Channel 官方联系页直接推荐 ITV News In Full，并明确地方新闻在播后提供回看；认证 ITV News 视频描述观察到 @itvnewsinfull。不能把回看当直播。",
+      "short": "ITV News In ",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.itv.com/news/channel/2022-08-16/contact-itv-channel-television",
+            "note": "ITV Channel 官方联系页直接推荐 ITV News In Full，并明确地方新闻在播后提供回看；认证 ITV News 视频描述观察到 @itvnewsinfull。不能把回看当直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "one-news-nz",
+      "name": "1News",
+      "country": "新西兰",
+      "region": "Auckland",
+      "city": "Auckland",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "国家公共广播",
+      "youtubeUrl": "https://www.youtube.com/channel/UCxPAYgO8OpFev3PUTKbsxNw",
+      "streamsUrl": "https://www.youtube.com/channel/UCxPAYgO8OpFev3PUTKbsxNw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.1news.co.nz/",
+      "description": "YouTube 官方视频描述明确为 TVNZ 1News 官方频道，新闻及 Breakfast、Seven Sharp、Q+A 等；频道 ID 页面返回 1News 标题。",
+      "short": "1News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=RpZbDgNX2o0",
+            "note": "YouTube 官方视频描述明确为 TVNZ 1News 官方频道，新闻及 Breakfast、Seven Sharp、Q+A 等；频道 ID 页面返回 1News 标题。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "qanda-nz",
+      "name": "Q+A with Jack Tame",
+      "country": "新西兰",
+      "region": "Auckland",
+      "city": "Auckland",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "英语访谈",
+      "youtubeUrl": "https://www.youtube.com/channel/UCUmUXLkoEYuMkKmks68wlNw",
+      "streamsUrl": "https://www.youtube.com/channel/UCUmUXLkoEYuMkKmks68wlNw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.tvnz.co.nz/shows/q-and-a",
+      "description": "频道 ID 页面返回 Q+A with Jack Tame；节目资料为 TVNZ 1 Q+A 的新闻访谈和专家讨论，并链接 TVNZ 节目页。非全天直播。",
+      "short": "Q+A with Jac",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCUmUXLkoEYuMkKmks68wlNw",
+            "note": "频道 ID 页面返回 Q+A with Jack Tame；节目资料为 TVNZ 1 Q+A 的新闻访谈和专家讨论，并链接 TVNZ 节目页。非全天直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "cbc-nl",
+      "name": "CBC News NL - Newfoundland and Labrador",
+      "country": "加拿大",
+      "region": "Newfoundland and Labrador",
+      "city": "St. John’s",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCpPLxYC6uNNfNrSQokButSg",
+      "streamsUrl": "https://www.youtube.com/channel/UCpPLxYC6uNNfNrSQokButSg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbc.ca/nl",
+      "description": "索引中的 YouTube 认证 @CBCNL 频道描述明确为 CBC Newfoundland and Labrador 官方频道；仅身份及类型核实，当前直播未确认。",
+      "short": "CBC News NL ",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCpPLxYC6uNNfNrSQokButSg",
+            "note": "索引中的 YouTube 认证 @CBCNL 频道描述明确为 CBC Newfoundland and Labrador 官方频道；仅身份及类型核实，当前直播未确认。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "cp24",
+      "name": "CP24",
+      "country": "加拿大",
+      "region": "Ontario",
+      "city": "Toronto",
+      "cityAliases": [
+        "多伦多"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCs3o4RhBiP2wcwqkZR2QVLw",
+      "streamsUrl": "https://www.youtube.com/channel/UCs3o4RhBiP2wcwqkZR2QVLw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cp24.com/",
+      "description": "YouTube 索引认证 @CP24；Bell Media 官方品牌页说明为 Toronto/GTA 多平台地方新闻服务，当前直播未确认。",
+      "short": "CP24",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.bellmedia.ca/the-lede/tv/cp24/",
+            "note": "YouTube 索引认证 @CP24；Bell Media 官方品牌页说明为 Toronto/GTA 多平台地方新闻服务，当前直播未确认。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "cbc-manitoba",
+      "name": "CBC News Manitoba",
+      "country": "加拿大",
+      "region": "Manitoba",
+      "city": "Winnipeg",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCRsN95JWuHHZpG4GAA97BJg",
+      "streamsUrl": "https://www.youtube.com/channel/UCRsN95JWuHHZpG4GAA97BJg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cbc.ca/news/canada/manitoba",
+      "description": "YouTube 频道 ID 页面返回 CBC News Manitoba（索引较旧）；认证 CBC News Manitoba 视频描述明确为本省新闻，当前直播未确认。",
+      "short": "CBC News Man",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=ZeDRK254KCE",
+            "note": "YouTube 频道 ID 页面返回 CBC News Manitoba（索引较旧）；认证 CBC News Manitoba 视频描述明确为本省新闻，当前直播未确认。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "stv-news",
+      "name": "STV News",
+      "country": "英国",
+      "region": "Scotland",
+      "city": "Glasgow / Aberdeen",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/@stvnews",
+      "streamsUrl": "https://www.youtube.com/@stvnews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://news.stv.tv/",
+      "description": "直接读取 YouTube @stvnews 返回 STV News 标题（索引较旧）；STV 集团官方业绩说明其苏格兰地方新闻及 YouTube 分发，当前直播未确认。",
+      "short": "STV News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.stvplc.tv/newsroom/2025/stv-group-plc-full-year-results-to-31-december-2024/",
+            "note": "直接读取 YouTube @stvnews 返回 STV News 标题（索引较旧）；STV 集团官方业绩说明其苏格兰地方新闻及 YouTube 分发，当前直播未确认。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "global-news",
+      "name": "Global News",
+      "country": "加拿大",
+      "region": "Ontario / British Columbia",
+      "city": "Toronto / Vancouver",
+      "cityAliases": [
+        "多伦多",
+        "温哥华"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UChLtXXpo4Ge1ReTEboVvTDg",
+      "streamsUrl": "https://www.youtube.com/channel/UChLtXXpo4Ge1ReTEboVvTDg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://globalnews.ca/",
+      "description": "已读取 YouTube 索引主频道描述 Welcome to the official Global News channel on YouTube；全国与地方新闻合并入口，不凭频道存在判断正在直播。",
+      "short": "Global News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UChLtXXpo4Ge1ReTEboVvTDg",
+            "note": "已读取 YouTube 索引主频道描述 Welcome to the official Global News channel on YouTube；全国与地方新闻合并入口，不凭频道存在判断正在直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "chch-news",
+      "name": "CHCH News",
+      "country": "加拿大",
+      "region": "Ontario",
+      "city": "Hamilton / Halton / Niagara",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCjkETDTi-OBxrN4z5lvaL5A",
+      "streamsUrl": "https://www.youtube.com/channel/UCjkETDTi-OBxrN4z5lvaL5A/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.chch.com/",
+      "description": "官网说明通过 YouTube 提供 CHCH 新闻；精确频道 ID 页面返回 CHCH News（旧索引）；频道简介为官方 CHCH 新闻，当前直播未确认。",
+      "short": "CHCH News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.chch.com/chch-news/no-matter-what-big-tech-does-you-can-always-count-on-chch-news/",
+            "note": "官网说明通过 YouTube 提供 CHCH 新闻；精确频道 ID 页面返回 CHCH News（旧索引）；频道简介为官方 CHCH 新闻，当前直播未确认。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "channel4-news",
+      "name": "Channel 4 News",
+      "country": "英国",
+      "region": "England",
+      "city": "London",
+      "cityAliases": [
+        "伦敦"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UCTrQ7HXWRRxr7OsOtodr2_w",
+      "streamsUrl": "https://www.youtube.com/channel/UCTrQ7HXWRRxr7OsOtodr2_w/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.channel4.com/news",
+      "description": "Channel 4 官方发布明确新闻节目及 YouTube 业务；精确频道 ID 返回 Channel 4 News 标题（1.2 年旧索引）；非当前直播证明。",
+      "short": "Channel 4 Ne",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.channel4.com/press/news/channel-4-renews-itn-contract-channel-4-news-until-end-2026",
+            "note": "Channel 4 官方发布明确新闻节目及 YouTube 业务；精确频道 ID 返回 Channel 4 News 标题（1.2 年旧索引）；非当前直播证明。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "bbc-earth",
+      "name": "BBC Earth",
+      "country": "英国",
+      "region": "England",
+      "city": "Bristol",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/channel/UCwmZiChSryoWQCZMIQezgTg",
+      "streamsUrl": "https://www.youtube.com/channel/UCwmZiChSryoWQCZMIQezgTg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.bbcearth.com/",
+      "description": "YouTube 索引认证 @bbcearth 描述为 Planet Earth/Frozen Planet 等官方频道、BBC Studios 商业频道；主要纪录片，当前直播未确认。",
+      "short": "BBC Earth",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCwmZiChSryoWQCZMIQezgTg",
+            "note": "YouTube 索引认证 @bbcearth 描述为 Planet Earth/Frozen Planet 等官方频道、BBC Studios 商业频道；主要纪录片，当前直播未确认。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "times-radio",
+      "name": "Times Radio",
+      "country": "英国",
+      "region": "England",
+      "city": "London",
+      "cityAliases": [
+        "伦敦"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "英语访谈",
+      "youtubeUrl": "https://www.youtube.com/c/timesradio1",
+      "streamsUrl": "https://www.youtube.com/c/timesradio1/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.thetimes.co.uk/radio",
+      "description": "YouTube 精确入口返回 Times Radio 标题（1.5 年旧索引）；News UK 官方品牌页确认新闻及访谈广播身份，不据此宣称 YouTube 正在直播。",
+      "short": "Times Radio",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.news.co.uk/our-brands/times-radio/",
+            "note": "YouTube 精确入口返回 Times Radio 标题（1.5 年旧索引）；News UK 官方品牌页确认新闻及访谈广播身份，不据此宣称 YouTube 正在直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-10news",
+      "name": "10 News Australia",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "悉尼",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/@10NewsAU",
+      "streamsUrl": "https://www.youtube.com/@10NewsAU/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://10.com.au/news",
+      "description": "YouTube 官方频道说明为 10 News 官方页面，报道澳大利亚及国际新闻；未确认当前直播。",
+      "short": "10 News Aust",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UC64A-bbH15b5kN5A32CErOA",
+            "note": "YouTube 官方频道说明为 10 News 官方页面，报道澳大利亚及国际新闻；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-9news",
+      "name": "9 News Australia",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "悉尼 / 墨尔本 / 布里斯班 / 珀斯 / 阿德莱德",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/@9NewsAUS",
+      "streamsUrl": "https://www.youtube.com/@9NewsAUS/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.9news.com.au/",
+      "description": "YouTube 已认证频道；介绍列出澳大利亚主要城市新闻及全国新闻；未确认当前直播。",
+      "short": "9 News Austr",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCIYLOcEUX6TbBo7HQVF2PKA",
+            "note": "YouTube 已认证频道；介绍列出澳大利亚主要城市新闻及全国新闻；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-7news",
+      "name": "7NEWS Australia",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "悉尼 / 墨尔本 / 布里斯班 / 珀斯 / 阿德莱德",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "地方新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC5T7D-Dh1eDGtsAFCuwv_Sw",
+      "streamsUrl": "https://www.youtube.com/channel/UC5T7D-Dh1eDGtsAFCuwv_Sw/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://7news.com.au/",
+      "description": "7NEWS 官方 Linktree 的 YouTube 链接经 7news.link/youtube 重定向到该频道；官方简介说明晚间新闻；未确认当前直播。",
+      "short": "7NEWS Austra",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://linktr.ee/7newsaustralia",
+            "note": "7NEWS 官方 Linktree 的 YouTube 链接经 7news.link/youtube 重定向到该频道；官方简介说明晚间新闻；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-skynews",
+      "name": "Sky News Australia",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "悉尼",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@SkyNewsAustralia",
+      "streamsUrl": "https://www.youtube.com/@SkyNewsAustralia/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.skynews.com.au/",
+      "description": "YouTube 已认证 Sky News Australia 频道，说明列出澳大利亚城市和新闻内容；与英国 Sky News 不同；未确认当前直播。",
+      "short": "Sky News Aus",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCO0akufu9MOzyz3nvGIXAAw",
+            "note": "YouTube 已认证 Sky News Australia 频道，说明列出澳大利亚城市和新闻内容；与英国 Sky News 不同；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-sbsnews",
+      "name": "SBS News",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "悉尼",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/c/sbsnews",
+      "streamsUrl": "https://www.youtube.com/c/sbsnews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.sbs.com.au/news",
+      "description": "SBS News 官方文章直接列出 youtube.com/c/sbsnews；官方新闻视频页说明 YouTube 新闻节目；未确认当前直播。",
+      "short": "SBS News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.sbs.com.au/news/article/sbs-news-is-back-on-facebook-but-heres-how-to-follow-us-on-other-platforms/5f9te40ag",
+            "note": "SBS News 官方文章直接列出 youtube.com/c/sbsnews；官方新闻视频页说明 YouTube 新闻节目；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-indepth",
+      "name": "ABC NEWS In-depth",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/abcnewsindepth",
+      "streamsUrl": "https://www.youtube.com/abcnewsindepth/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 深度新闻、调查与访谈节目；未确认当前直播。",
+      "short": "ABC NEWS In-",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 深度新闻、调查与访谈节目；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-btn",
+      "name": "Behind the News",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/behindthenews",
+      "streamsUrl": "https://www.youtube.com/behindthenews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 青少年新闻教育节目；未确认当前直播。",
+      "short": "Behind the N",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 青少年新闻教育节目；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-qanda",
+      "name": "Q+A",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "英语访谈",
+      "youtubeUrl": "https://www.youtube.com/qanda",
+      "streamsUrl": "https://www.youtube.com/qanda/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 公共议题讨论与访谈节目；未确认当前直播。",
+      "short": "Q+A",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 公共议题讨论与访谈节目；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-australia",
+      "name": "ABC Australia",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "综合电视节目",
+      "youtubeUrl": "https://www.youtube.com/abcaustralia",
+      "streamsUrl": "https://www.youtube.com/abcaustralia/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 国际节目频道，与 ABC NEWS Australia 新闻频道不同；未确认当前直播。",
+      "short": "ABC Australi",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 国际节目频道，与 ABC NEWS Australia 新闻频道不同；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-chinese",
+      "name": "ABC 中文",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "普通话"
+      ],
+      "language": "普通话",
+      "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/channel/UC6Sq_majkP19J5YGjhMndtg",
+      "streamsUrl": "https://www.youtube.com/channel/UC6Sq_majkP19J5YGjhMndtg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 中文新闻文化频道；官方目录链接解析为此频道 ID；未确认当前直播。",
+      "short": "ABC 中文",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 中文新闻文化频道；官方目录链接解析为此频道 ID；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-classic",
+      "name": "ABC Classic",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/abcclassic",
+      "streamsUrl": "https://www.youtube.com/abcclassic/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 古典音乐频道；未确认当前直播。",
+      "short": "ABC Classic",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 古典音乐频道；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-triplej",
+      "name": "triple j",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/triplej",
+      "streamsUrl": "https://www.youtube.com/triplej/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 青年音乐与艺人访谈频道；未确认当前直播。",
+      "short": "triple j",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 青年音乐与艺人访谈频道；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-tv",
+      "name": "ABC TV & iview",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "综合电视节目",
+      "youtubeUrl": "https://www.youtube.com/abctv",
+      "streamsUrl": "https://www.youtube.com/abctv/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 电视及 iview 节目频道；未确认当前直播。",
+      "short": "ABC TV & ivi",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 电视及 iview 节目频道；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-arts",
+      "name": "ABC Arts",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/@abcartsaustralia",
+      "streamsUrl": "https://www.youtube.com/@abcartsaustralia/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 艺术文化频道；未确认当前直播。",
+      "short": "ABC Arts",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 艺术文化频道；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-gardening",
+      "name": "Gardening Australia",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/gardeningaustralia",
+      "streamsUrl": "https://www.youtube.com/gardeningaustralia/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 园艺自然节目；未确认当前直播。",
+      "short": "Gardening Au",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 园艺自然节目；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-indigenous",
+      "name": "ABC Indigenous",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/abcindigenous",
+      "streamsUrl": "https://www.youtube.com/abcindigenous/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 澳大利亚原住民文化与故事频道；未确认当前直播。",
+      "short": "ABC Indigeno",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 澳大利亚原住民文化与故事频道；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-music",
+      "name": "ABC Music",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/abcmusic",
+      "streamsUrl": "https://www.youtube.com/abcmusic/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 音乐发行与演出频道；未确认当前直播。",
+      "short": "ABC Music",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 音乐发行与演出频道；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "au-abc-science",
+      "name": "ABC Science",
+      "country": "澳大利亚",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/abcscience",
+      "streamsUrl": "https://www.youtube.com/abcscience/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.abc.net.au/",
+      "description": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 科学教育频道；未确认当前直播。",
+      "short": "ABC Science",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://help.abc.net.au/hc/en-us/articles/360003348876-ABC-s-social-media-directory",
+            "note": "ABC 官方社交媒体目录直接列出该频道 YouTube 链接。ABC 科学教育频道；未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "global-reuters",
+      "name": "Reuters",
+      "country": "英国",
+      "region": "英格兰",
+      "city": "伦敦",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@Reuters",
+      "streamsUrl": "https://www.youtube.com/@Reuters/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.reuters.com/",
+      "description": "YouTube 已认证 Reuters 频道，说明为路透社世界新闻、商业及财经报道。 未确认当前直播。",
+      "short": "Reuters",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UChqUTb7kYRX8-EiaN3XFrSQ",
+            "note": "YouTube 已认证 Reuters 频道，说明为路透社世界新闻、商业及财经报道。 未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "global-ap",
+      "name": "Associated Press",
+      "country": "美国",
+      "region": "纽约州",
+      "city": "纽约",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@AssociatedPress",
+      "streamsUrl": "https://www.youtube.com/@AssociatedPress/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://apnews.com/",
+      "description": "YouTube 已认证 Associated Press 频道，介绍 AP 新闻机构历史并链接 AP News。 未确认当前直播。",
+      "short": "Associated P",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UC52X5wxOL_s5yw0dQk7NtgA",
+            "note": "YouTube 已认证 Associated Press 频道，介绍 AP 新闻机构历史并链接 AP News。 未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "global-natgeo",
+      "name": "National Geographic",
+      "country": "美国",
+      "region": "哥伦比亚特区",
+      "city": "华盛顿",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "streamsUrl": "https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.nationalgeographic.com/",
+      "description": "YouTube 官方 National Geographic 频道介绍科学、自然、探索、历史与旅行内容；国家地理官方新闻稿亦确认其 YouTube 内容。 未确认当前直播。",
+      "short": "National Geo",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A",
+            "note": "YouTube 官方 National Geographic 频道介绍科学、自然、探索、历史与旅行内容；国家地理官方新闻稿亦确认其 YouTube 内容。 未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "global-smithsonian",
+      "name": "Smithsonian",
+      "country": "美国",
+      "region": "哥伦比亚特区",
+      "city": "华盛顿",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/@smithsonian",
+      "streamsUrl": "https://www.youtube.com/@smithsonian/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.si.edu/",
+      "description": "YouTube 已认证 Smithsonian 机构频道；这是史密森学会博物馆机构频道。 未确认当前直播。",
+      "short": "Smithsonian",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCYm9MWccmz9n2yyMx9vRrXg",
+            "note": "YouTube 已认证 Smithsonian 机构频道；这是史密森学会博物馆机构频道。 未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "global-ft",
+      "name": "Financial Times",
+      "country": "英国",
+      "region": "英格兰",
+      "city": "伦敦",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "财经商业",
+      "youtubeUrl": "https://www.youtube.com/@FinancialTimes",
+      "streamsUrl": "https://www.youtube.com/@FinancialTimes/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.ft.com/",
+      "description": "FT 官方文章直接链接 FinancialTimes YouTube 频道，介绍 Martin Wolf 财经播客及视频。 未确认当前直播。",
+      "short": "Financial Ti",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.ft.com/content/01119d92-0d23-4d91-8a66-44ebd94c2356",
+            "note": "FT 官方文章直接链接 FinancialTimes YouTube 频道，介绍 Martin Wolf 财经播客及视频。 未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "global-cnet",
+      "name": "CNET",
+      "country": "美国",
+      "region": "加利福尼亚州",
+      "city": "旧金山",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/channel/UCOmcA3f_RrH6b9NmcNa4tdg",
+      "streamsUrl": "https://www.youtube.com/channel/UCOmcA3f_RrH6b9NmcNa4tdg/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.cnet.com/",
+      "description": "YouTube 官方 CNET 频道介绍科技产品评测、分析与消费电子内容。 未确认当前直播。",
+      "short": "CNET",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCOmcA3f_RrH6b9NmcNa4tdg",
+            "note": "YouTube 官方 CNET 频道介绍科技产品评测、分析与消费电子内容。 未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "global-wired",
+      "name": "WIRED",
+      "country": "美国",
+      "region": "加利福尼亚州",
+      "city": "旧金山",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/@wired",
+      "streamsUrl": "https://www.youtube.com/@wired/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.wired.com/",
+      "description": "WIRED 官方文章直接以 www.youtube.com/@wired 指向自己的频道；官方视频新闻稿说明科技和短纪录片内容。 未确认当前直播。",
+      "short": "WIRED",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.wired.com/story/how-to-claim-youtube-handle-set-up",
+            "note": "WIRED 官方文章直接以 www.youtube.com/@wired 指向自己的频道；官方视频新闻稿说明科技和短纪录片内容。 未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "global-ricksteves",
+      "name": "Rick Steves Europe",
+      "country": "美国",
+      "region": "华盛顿州",
+      "city": "埃德蒙兹",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "旅行",
+      "youtubeUrl": "https://www.youtube.com/@RickStevesEuropeOfficial",
+      "streamsUrl": "https://www.youtube.com/@RickStevesEuropeOfficial/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.ricksteves.com/",
+      "description": "YouTube 已认证 Rick Steves Europe 官方频道；Rick Steves 官网 Watch Read Listen 页介绍旅行电视节目、课堂和片段。 未确认当前直播。",
+      "short": "Rick Steves ",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCchgIh8Tc4sTmBfnMQ5pDdg",
+            "note": "YouTube 已认证 Rick Steves Europe 官方频道；Rick Steves 官网 Watch Read Listen 页介绍旅行电视节目、课堂和片段。 未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "global-verge",
+      "name": "The Verge",
+      "country": "美国",
+      "region": "纽约州",
+      "city": "纽约",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/theverge",
+      "streamsUrl": "https://www.youtube.com/theverge/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.theverge.com/",
+      "description": "The Verge 官网 Verge Video 导航的 YouTube 链接直接指向 youtube.com/theverge，目标页面标题 The Verge。 未确认当前直播。",
+      "short": "The Verge",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.theverge.com/",
+            "note": "The Verge 官网 Verge Video 导航的 YouTube 链接直接指向 youtube.com/theverge，目标页面标题 The Verge。 未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "global-teded",
+      "name": "TED-Ed",
+      "country": "美国",
+      "region": "纽约州",
+      "city": "纽约",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/TEDEducation",
+      "streamsUrl": "https://www.youtube.com/TEDEducation/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://ed.ted.com/",
+      "description": "TED 官方使用政策直接列出 YouTube.com/TEDEducation 并说明 TED-Ed 教育视频。 未确认当前直播。",
+      "short": "TED-Ed",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy",
+            "note": "TED 官方使用政策直接列出 YouTube.com/TEDEducation 并说明 TED-Ed 教育视频。 未确认当前直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-pbs",
+      "name": "PBS",
+      "country": "美国",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "综合电视节目",
+      "youtubeUrl": "https://www.youtube.com/pbs",
+      "streamsUrl": "https://www.youtube.com/pbs/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 主频道，公共电视节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "PBS",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.pbs.org/about/about-pbs/blogs/news/pbs-enhances-content-offering-on-its-popular-youtube-channel-january-16-2008/",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 主频道，公共电视节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-newshour",
+      "name": "PBS NewsHour",
+      "country": "美国",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/PBSNewsHour",
+      "streamsUrl": "https://www.youtube.com/PBSNewsHour/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 公共电视新闻与访谈；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "PBS NewsHour",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.pbs.org/publiceditor/blogs/ombudsman/searching-streaming-and-sometimes-screaming-at-the-sites/",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 公共电视新闻与访谈；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-terra",
+      "name": "PBS Terra",
+      "country": "美国",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/c/pbsterra",
+      "streamsUrl": "https://www.youtube.com/c/pbsterra/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 科学与自然节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "PBS Terra",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://linktr.ee/pbsdigitalstudios",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 科学与自然节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-eons",
+      "name": "PBS Eons",
+      "country": "美国",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/@eons",
+      "streamsUrl": "https://www.youtube.com/@eons/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 生命史与古生物教育；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "PBS Eons",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCzR-rom72PHN9Zg7RML9EbA",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 生命史与古生物教育；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-origins",
+      "name": "PBS Origins",
+      "country": "美国",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/@pbsorigins",
+      "streamsUrl": "https://www.youtube.com/@pbsorigins/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 美国与世界历史节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "PBS Origins",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/channel/UCiB8h9jD2Mlxx96ZFnGDSJw",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 美国与世界历史节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-documentaries",
+      "name": "PBS Documentaries",
+      "country": "美国",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/channel/UCq6OAftTQOuUBRdtUDq5SUA",
+      "streamsUrl": "https://www.youtube.com/channel/UCq6OAftTQOuUBRdtUDq5SUA/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 与 ITVS 于 2026 年推出的纪录片频道；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "PBS Document",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://www.pbs.org/about/about-pbs/blogs/news/pbs-partners-with-itvs-to-launch-the-pbs-documentaries-youtube-channel/",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 与 ITVS 于 2026 年推出的纪录片频道；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-storied",
+      "name": "PBS Storied",
+      "country": "美国",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/c/pbsstoried",
+      "streamsUrl": "https://www.youtube.com/c/pbsstoried/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 文学、神话与文化节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "PBS Storied",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://linktr.ee/pbsdigitalstudios",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 文学、神话与文化节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-indiealaska",
+      "name": "Indie Alaska",
+      "country": "美国",
+      "region": "阿拉斯加州",
+      "city": "阿拉斯加",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "文化纪录片",
+      "youtubeUrl": "https://www.youtube.com/c/indiealaska",
+      "streamsUrl": "https://www.youtube.com/c/indiealaska/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。阿拉斯加公共媒体人物与地方文化节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "Indie Alaska",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://linktr.ee/pbsdigitalstudios",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。阿拉斯加公共媒体人物与地方文化节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-spacetime",
+      "name": "PBS Space Time",
+      "country": "美国",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/c/pbsspacetime",
+      "streamsUrl": "https://www.youtube.com/c/pbsspacetime/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 天文学与物理教育；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "PBS Space Ti",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://linktr.ee/pbsdigitalstudios",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 天文学与物理教育；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-deeplook",
+      "name": "Deep Look",
+      "country": "美国",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/c/KQEDDeepLook",
+      "streamsUrl": "https://www.youtube.com/c/KQEDDeepLook/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。KQED 与 PBS Digital Studios 微观自然科学节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "Deep Look",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://linktr.ee/pbsdigitalstudios",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。KQED 与 PBS Digital Studios 微观自然科学节目；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-besmart",
+      "name": "Be Smart",
+      "country": "美国",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "科技教育",
+      "youtubeUrl": "https://www.youtube.com/c/itsokaytobesmart",
+      "streamsUrl": "https://www.youtube.com/c/itsokaytobesmart/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 科学问题与知识教育；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "Be Smart",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://linktr.ee/pbsdigitalstudios",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 科学问题与知识教育；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "us-twocents",
+      "name": "Two Cents",
+      "country": "美国",
+      "region": "全国",
+      "city": "全国",
+      "cityAliases": [],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "财经商业",
+      "youtubeUrl": "https://www.youtube.com/c/TwoCentsPBS",
+      "streamsUrl": "https://www.youtube.com/c/TwoCentsPBS/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.pbs.org/digital-studios/",
+      "description": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 个人理财与经济教育；未确认当前直播；目录链接抓取受限不等于播放失效。",
+      "short": "Two Cents",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-26",
+        "evidence": [
+          {
+            "url": "https://linktr.ee/pbsdigitalstudios",
+            "note": "PBS 官方资料、已认证 YouTube 频道或 PBS Digital Studios 官方社交目录直接列出该频道链接。PBS 个人理财与经济教育；未确认当前直播；目录链接抓取受限不等于播放失效。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
+    },
+    {
+      "id": "bbc-news",
+      "name": "BBC News",
+      "country": "英国",
+      "region": "England",
+      "city": "London",
+      "cityAliases": [
+        "伦敦"
+      ],
+      "languages": [
+        "英语"
+      ],
+      "language": "英语",
+      "category": "国际新闻",
+      "youtubeUrl": "https://www.youtube.com/@BBCNews",
+      "streamsUrl": "https://www.youtube.com/@BBCNews/streams",
+      "youtubeChannelId": "",
+      "aliases": [],
+      "website": "https://www.bbc.com/news",
+      "description": "YouTube 官方博客于 2026-10-15 介绍 BBC News 的 YouTube 新闻业务，并直接链接 @BBCNews；链接打开返回 BBC News 频道。可用地区有限，本文不证明此刻正在直播。",
+      "short": "BBC News",
+      "identity": {
+        "status": "verified",
+        "checkedAt": "2026-10-27",
+        "evidence": [
+          {
+            "url": "https://blog.youtube/news-and-events/bbc-news-live-youtube-launch/",
+            "note": "YouTube 官方博客于 2026-10-15 介绍 BBC News 的 YouTube 新闻业务，并直接链接 @BBCNews；链接打开返回 BBC News 频道。可用地区有限，本文不证明此刻正在直播。",
+            "method": "primary-source"
+          }
+        ]
+      },
+      "live": {
+        "status": "unknown"
+      },
+      "local": false
     }
-  ],
-  "schemaVersion": 2,
-  "verificationPolicy": "已验证可播放仅代表核对时本机 Chrome，72 小时后自动降级未验证；不宣称所有地区可播放。"
+  ]
 }

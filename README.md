@@ -1,56 +1,67 @@
-# Global TV｜全球电视直播台 · 直播源升级 v2
+# Global TV｜全球 YouTube 频道大全
 
-网站固定地址：https://songshangsheng040-web.github.io/global-tv/
+固定网址：https://songshangsheng040-web.github.io/global-tv/
 
-面向 Mac Chrome 的官方新闻直播导航。继续使用原仓库和 GitHub Pages；无付费 API、盗版 IPTV、私自抽取的 M3U8 或外部播放器。原 Mac 启动文件继续有效，无需重新下载。
+继续使用 `songshangsheng040-web/global-tv` 与 GitHub Pages。当前公共目录收录 **130 个经来源核实的官方频道**，覆盖 14 个国家和地区。美国 71、英国 14、加拿大 13、澳大利亚 19、新西兰 2，其他地区 11。优先英语，包含美国各州城市地方新闻、CBC 地方频道、英国地区节目、澳大利亚新闻，以及财经、科技教育、文化纪录片、旅行和访谈。
 
-## 立即观看与备用线路
+这是一份“官方频道及其直播栏目”目录，不是 130 路全天直播源。每条保存官方身份、类型和频道地址的来源依据；完整清单见 [SOURCES.md](SOURCES.md)。没有接入可靠实时状态数据，因此 **当前确认正在直播的数量不作统计**，界面明确显示“当前直播未确认”。没有为了凑到 200 个而编造城市子频道或重复计算同一频道。
 
-点击频道，再点击“立即观看”。优先使用经人工核验的官方 YouTube 持续直播入口或当前直播观看页；官网为备用。没有可靠 YouTube 直播时保留官网并明确标记未验证。播放器在 Chrome 新标签页打开，不自动重试，不自动连开多个标签。全屏由 YouTube 或官方播放器提供。
+## 如何使用
 
-“备用线路”展开后可查看每条线路的 URL、状态、核对时间、验证范围、官方来源依据和限制，再手动切换。不存在的备用入口不会编造。YouTube 频道首页、过去的 LIVE 标题、直播回放均不能作为当前直播证明。
+每个频道提供 **YouTube 频道主页** 和 **直播列表** 两个入口。直播列表 `/streams` 是 YouTube 的官方频道栏目，可能有正在直播、直播预告、历史回放，也可能暂时为空；不能把列表里的普通回放当作当前直播。
 
-“已验证可播放”仅显示当前仍在验证有效期内的频道。所有频道仍可搜索，并按国家、语言、分类筛选。收藏和最近观看继续使用 `globaltv.favorites`、`globaltv.recent`；升级没有改名或清除这些键。数据仅保存在当前浏览器；网站数据被清除或更换设备后不能恢复。
+搜索支持名称、国家、州省、城市、语言和类别；另有国家、语言、城市/州省筛选。常见城市也支持中文别名，如波士顿、纽约、旧金山、多伦多。每次显示 30 条，点击“显示更多”继续浏览，搜索始终覆盖完整目录。
 
-## 状态与证据
+收藏和最近观看继续使用原有 `globaltv.favorites`、`globaltv.recent`，升级不会清除或重命名。点击主页、直播列表或官网时才记录访问。数据仅保存在当前 Chrome；清除网站数据或更换设备不会自动同步。
 
-`channels.json` schemaVersion 为 2。每个频道保留原 `id`，新增 `sources`。每条线路记录：
+旧 TVNZ 1 为受地区限制的官网电视入口，未将 1News 等节目频道冒充 TVNZ 1。原 ID 记录在 `retiredChannels`，旧收藏仍保留且会提示暂未收录；1News、Q+A 作为各自官方 YouTube 频道单列。RTHK、CBC 等旧记录名称已调整为 YouTube 频道的实际名称，原 ID 保持不变。
 
-- `type`：youtube / website；`label`、`url`：官方观看入口。
-- `status`：playable 已验证可播放 / unverified 官方入口存在但播放未验证 / region 地区限制 / login 需要登录或订阅 / ended 直播已结束 / invalid 链接失效。
-- `liveState`：live 核对时正在直播 / unknown 未确认 / scheduled 尚未开播 / ended 已结束。
-- `checkedAt`：带时区的实际核对时间。
-- `playbackVerifiedAt`、`playbackEvidence`：实际播放测试时间和证据；禁止仅凭 HTTP 200 设置 playable。
-- `officialEvidence`：官方身份依据；`verification`、`restrictions`：核对范围及限制。
+## 直播状态：不伪装实时检测
 
-本次通过 Chrome 检查官方认证频道、播放器正在运行、正在直播指示和音频播放标识。结果仅代表此台 Mac 和当时的网络，不代表全部地区、未来持续可播放或所有节目均实时制作。线性电视可包含官方安排的重播节目。NHK YouTube 新闻流不等于完整 NHK WORLD TV 节目表。
+`liveStatus.available` 当前为 false。“只看正在直播”显示为禁用，并说明原因。上次 11 个频道的播放测试只作为历史记录保留，不再用于宣称当前在播，也不据此提供“立即观看直播”按钮。
 
-播放证明有效期 72 小时，之后界面自动显示“官方入口存在，但播放未验证”；这不是自动重新测通。未来时间戳不会被视为有效证明。ended、invalid、scheduled 线路不会作为“立即观看”目的地。本站没有绕过跨域限制的自动探测，也没有每页加载后台访问所有广播机构。
+代码预留了独立状态策略：只有受信任的 YouTube Data API 状态、两分钟内的时间戳、匹配的频道 ID、active 广播状态和合法观看 URL 同时满足，才显示在播按钮和开启筛选。过期、预告、已结束、手工快照或本地导入资料都不算。当前没有启用该服务，也没有 API Key。该代码契约不是已上线的实时监控能力。
 
-详细频道名单及本次实际测试范围见 `VALIDATION.md`。ABC 官网有用户报告的播放器错误，已明确记录在该备用线路。Bloomberg、CBS 的 YouTube /live 本次未进入正在直播播放器，所以没有据此新增“可播放”记录。
+频道身份核实与直播播放验证严格区分。官网出站链接、官方社交目录、YouTube 频道页标题和认证发布者描述用于确认身份及类型；索引页可能较旧，不能据此声称今天正在直播或每个地区均能播放。详情中保存逐项核对方法及证据链接。`/streams` 为基于已核对频道主页生成的官方栏目路径，未宣称逐个栏目此刻均有内容。
 
-## 故障反馈
+## 字幕翻译与 Mac 启动
 
-点击“反馈故障”，选择发生问题的线路和故障类型，可选填说明，先预览。本站不会自动获取位置、账号、浏览记录或用户代理，也不自动创建 Issue。
-
-只有用户点击“在 GitHub 打开草稿”后，所选频道、线路 URL、故障类型和自填说明才会传给 GitHub。用户还必须登录并亲自点击 Submit new issue。Issue 为公开内容，GitHub 用户名可能显示；不要填写密码、邮箱或其他私人信息。关闭反馈窗口不会提交。
-
-## Chrome 字幕翻译
-
-保留已有 Chrome 设置即可，本站不会修改字幕或翻译设置。YouTube 自带 CC 与 Chrome 实时字幕是两种功能；即使 YouTube 提示“无法显示字幕”，有声内容仍可由 Chrome 实时字幕识别，具体以浏览器能力为准。
-
-如需设置：地址栏打开 `chrome://settings/accessibility` → 实时字幕 → 英语 → 实时翻译 → 中文（简体）。翻译由 Chrome 提供，字幕会发送给 Google；网络、设备、音质和版本可能影响结果。本站不提供自制双语字幕。
+继续在 Chrome 中直接打开 YouTube，不调用外部播放器，不修改用户已设置好的 Live Caption / Live Translate。字幕说明保留在页面右上角。YouTube 自带 CC 与 Chrome 实时字幕不同；具体功能以 Chrome 版本、设备和网络为准。实时翻译由 Google 提供，字幕会发送给 Google。
 
 官方说明：https://support.google.com/chrome/answer/10538231?hl=zh-Hans
 
-## 更新与新增频道
+原 `全球电视台.command` 继续打开同一固定网址，无需重新下载或安装，也无需本地服务器。
 
-保留原频道 `id`，编辑 `sources`；先核验官方身份，再检查当前直播标识和实际播放器，不把频道主页、预告或回放登记为可播放。未测试填 unverified / unknown，不存在的备用不要添加。有实测证据才填写 playable 和对应时间。更新 `updatedAt` 后提交 main。
+## 批量导入、去重和本地维护
 
-GitHub Pages 从 main 根目录自动发布；网址不变。每次加载和点击“更新频道”用时间戳与 `cache: no-store` 读取最新数据，JS/CSS 版本参数避免旧版资源长期缓存。未使用 Service Worker。数据失败会显示错误，不会谎报更新成功。页面程序升级后刷新 Chrome 即可，不影响原收藏和观看记录。
+点击“资料维护”，选择 JSON 或 CSV（最多 2MB、1000 条）。JSON 支持数组或 `{channels:[...]}`；CSV 字段为：
 
-## 验证
+```text
+id,name,country,region,city,language,category,youtubeUrl,website,evidenceUrl,evidenceNote,checkedAt
+```
 
-`node --check app.js`、`node --check core.js` 检查语法。运行 `node --test source-policy.test.cjs` 检查优先级、失效与预告跳过、证据过期、未来时间戳、反馈草稿和数据契约。浏览器检查旧收藏、搜索、筛选、备用线路、反馈预览、字幕说明、主题和观看记录。
+`import-template.csv` 提供空表头。必填资料与证据缺失会拒绝导入。程序按规范化 YouTube 地址去重，忽略域名差异、handle 大小写、尾斜线和 `/streams` 后缀；相同 ID 对应不同频道会拒绝。handle 与 UC ID 的跨别名对应关系必须由维护者核实，不能自动猜测。
 
-本地预览：在仓库根目录运行 `python3 -m http.server 8765`，使用 Chrome 访问 http://127.0.0.1:8765 。不要直接双击 HTML，因为频道数据通过 fetch 加载。
+导入先预览新增数及重复数，用户点击应用后才保存到当前浏览器。所有本地导入、编辑均标为“来源待复核”，不会冒充公共目录中经核实的频道，也不保留导入文件的直播声明。“本地资料”视图可单独查看。
+
+点击频道详情中的“本地编辑”维护 JSON，不能修改已有 ID。可恢复公共资料或移除本地新增条目。支持导出完整目录，以及收藏、记录和本地资料备份。导出不等于自动发布 GitHub，本站不会后台上传用户数据。
+
+## 维护工具与发布
+
+无需 npm 或付费服务，Node 即可运行：
+
+```sh
+node catalog-tool.cjs validate
+node --test source-policy.test.cjs
+node catalog-tool.cjs merge incoming.csv proposal.json
+```
+
+默认合并结果为待复核资料，输出到新文件供审查，不直接覆盖公共数据。维护者完成身份、类型、频道链接核实后，才可用 `--reviewed` 标记已审查。该参数不执行网络验证，不能代替人工核实。程序拒绝覆盖已有输出文件。
+
+提交发布前检查证据、重复别名、城市和分类，并运行测试；公共目录必须全部经过审查。修改 `channels.json` 并提交 main，GitHub Pages 自动发布，地址不变。每次加载和点击“更新频道”使用时间戳及 `cache: no-store` 获取目录，代码与样式使用版本参数；程序更新时要同时更新 HTML 的资源版本。未使用 Service Worker。
+
+本地预览：在仓库根目录运行 `python3 -m http.server 8765`，用 Chrome 打开 http://127.0.0.1:8765 。不要直接双击 HTML，因为目录通过 fetch 读取。
+
+## 故障反馈
+
+点击“反馈资料 / 链接问题”可选择频道主页或直播列表、填写类型并预览。只有用户主动点击 GitHub 草稿链接，资料才会传给 GitHub；随后仍需用户登录并亲自提交公开 Issue。不会自动收集位置、账号、浏览历史，也不会自动发帖。
